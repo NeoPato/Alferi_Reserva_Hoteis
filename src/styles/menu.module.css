@@ -1,0 +1,30 @@
+.BarraMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: #deddc8;
+  box-sizing: border-box; 
+  width: 100%; 
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.BarraMenu a {
+  color: #000;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.BarraMenu h4 {
+  float: left; /* Keep h4 floated to the left */
+  color: #000;
+  padding-right:15cm;
+}
+
+.BarraMenu img{
+  background-color: #bdbca8;
+  border-radius: 20px;
+  height: 50px;
+  width: auto;
+  border: 2px solid black;
+
+}

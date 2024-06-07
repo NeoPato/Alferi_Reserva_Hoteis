@@ -1,0 +1,9 @@
+.TelaReserva{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 100%;
+    background-color: #fff;
+}
