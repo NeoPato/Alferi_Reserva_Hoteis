@@ -1,4 +1,4 @@
-import styles from '../styles/menu.module.css'; 
+import styles from '../styles/components/menu.module.css'; 
 
 export default function Menu() {
   return (

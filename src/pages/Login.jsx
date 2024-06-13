@@ -1,10 +1,10 @@
-import style from '../styles/Login.module.css';
-import googleIcon from '../assets/imagens/icones/google.png';  
-import instagramIcon from '../assets/imagens/icones/instagram.png';  
-import twitterIcon from '../assets/imagens/icones/twitter.png'; 
-import emailIcon from '../assets/imagens/icones/email.png'; 
-import senhaIcon from '../assets/imagens/icones/senha.png';  
-import eyeIcon from '../assets/imagens/icones/olho.png'
+import style from '../styles/pages/Login.module.css';
+import googleIcon from '../assets/imagens/icones/google.svg';  
+import instagramIcon from '../assets/imagens/icones/instagram.svg';  
+import twitterIcon from '../assets/imagens/icones/twitter.svg'; 
+import emailIcon from '../assets/imagens/icones/email.svg'; 
+import senhaIcon from '../assets/imagens/icones/senha.svg';  
+import eyeIcon from '../assets/imagens/icones/olho.svg'
 import VisibilidadeSenha from '../script/AlternarVisibilidadeSenha';
 
 function Login() {

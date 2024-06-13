@@ -1,4 +1,4 @@
-import style from '../styles/App.module.css';
+import style from '../styles/pages/App.module.css';
 import Menu from '../components/menu.jsx';
 import Footer from '../components/footer.jsx';
 

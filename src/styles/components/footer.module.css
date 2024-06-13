@@ -1,0 +1,27 @@
+/* src/components/Footer.module.css */
+.rodape {
+    background-color: #deddc8;
+    color: black;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+  }
+  
+.rodape p {
+    margin: 0;
+  }
+  
+.rodape .redeSocial {
+    margin-top: 1rem;
+  }
+  
+.rodape .redeSocial a {
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+  }
+  
+.rodape .redeSocial a:hover {
+    text-decoration: underline;
+  }
+  

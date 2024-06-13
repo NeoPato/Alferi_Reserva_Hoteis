@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import style from '../styles/Cadastrar.module.css';
-import googleIcon from '../assets/imagens/icones/google.png';  
-import instagramIcon from '../assets/imagens/icones/instagram.png';  
-import twitterIcon from '../assets/imagens/icones/twitter.png'; 
-import emailIcon from '../assets/imagens/icones/email.png'; 
-import nascIcon from '../assets/imagens/icones/calendar.png';
-import senhaIcon from '../assets/imagens/icones/senha.png';  
-import profileIcon from '../assets/imagens/icones/profile.png';
-import telefIcon from '../assets/imagens/icones/telefone.png';
-import eyeIcon from '../assets/imagens/icones/olho.png';
+import style from '../styles/pages/Cadastrar.module.css';
+import googleIcon from '../assets/imagens/icones/google.svg';  
+import instagramIcon from '../assets/imagens/icones/instagram.svg';  
+import twitterIcon from '../assets/imagens/icones/twitter.svg'; 
+import emailIcon from '../assets/imagens/icones/email.svg'; 
+import nascIcon from '../assets/imagens/icones/calendar.svg';
+import senhaIcon from '../assets/imagens/icones/senha.svg';  
+import profileIcon from '../assets/imagens/icones/profile.svg';
+import telefIcon from '../assets/imagens/icones/telefone.svg';
+import eyeIcon from '../assets/imagens/icones/olho.svg';
 import VisibilidadeSenha from '../script/AlternarVisibilidadeSenha';
 import formatCPF  from '../script/FormatCPF';
 import tratarMudancaCPF from '../script/tratarMudancaCPF ';
@@ -44,29 +44,32 @@ function Cadastrar() {
                         <div className={style.cadastrarBox}>
                             <h2>Cadastrar</h2>
                             <div className={style.inputGroup}>
+                                <input type="text" id="name" placeholder="Digite seu nome"/>
+                            </div>
+                            <div className={style.inputGroup}>
                                 <img src={profileIcon} alt="CPF icon" />
-                                <input type="text" name="cpf" value={formatCPF(cpf)} onChange={(e) => tratarMudancaCPF(e, setCpf)} placeholder="Digite seu CPF" />
+                                <input type="text" id="cpf" name="cpf" value={formatCPF(cpf)} onChange={(e) => tratarMudancaCPF(e, setCpf)} placeholder="Digite seu CPF" maxlength="14"/>
                             </div>
                             <div className={style.inputGroup}>
                                 <img src={emailIcon} alt="Email Icon" />
-                                <input type="email" name="email" placeholder="Digite seu Email" />
+                                <input type="email" id="email" name="email" placeholder="Digite seu Email" />
                             </div>
                             <div className={style.inputGroup}>
                                 <img src={nascIcon} alt="Nascimento Icon" />
-                                <input type="date" name="data de nascimento" placeholder="Coloque sua data de nascimento" />
+                                <input type="date" id="dateOfBirth" name="data de nascimento" placeholder="Coloque sua data de nascimento" max="2006-12-31"/>
                             </div>
                             <div className={style.inputGroup}>
                                 <img src={telefIcon} alt="Telefone Icon" />
-                                <input type="text" name="telefone" placeholder="Digite seu Telefone" />
-                            </div>
+                                <input type="tel" id="telefone" name="telefone"  maxlength="11" placeholder="Digite o número de telefone"/>
+                                </div>
                             <div className={style.inputGroup}>
                                 <img src={senhaIcon} alt="Senha Icon" />
-                                <input type={mostrarSenha ? 'text' : 'password'} value={senha} onChange={(e) => setSenha(e.target.value)} placeholder="Digite sua senha"/>
+                                <input type={mostrarSenha ? 'text' : 'password'} value={senha} onChange={(e) => setSenha(e.target.value)} placeholder="Digite sua senha" id="senha"/>
                                 <button className={style.eyeButton} onClick={alternarVisibilidadeSenha}>
                                     <img src={eyeIcon} alt="Mostrar a senha/ ou não"/>
                                 </button>
                             </div>
-                            <button className={style.cadastrarButton}>Cadastrar</button>
+                            <button className={style.cadastrarButton} onClick={"../src/server/node.cjs"}>Cadastrar</button>
                         </div>
                     </div>
                 </div>

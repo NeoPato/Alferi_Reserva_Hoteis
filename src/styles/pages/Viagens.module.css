@@ -1,0 +1,93 @@
+.TelaReserva {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #f4f4f4; 
+    width: 100vw;
+}
+
+.mainContent {
+    display: flex;
+
+}
+
+.leftPane {
+    display: block;
+    width: 20%;
+    background-color: #f0f0f0;
+}
+
+.rightPane {
+    width: 80%;
+    padding: 20px;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 10px; 
+}
+
+.label {
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.inputField, .selectField {
+    margin-bottom: 20px; /* Adjusted margin */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem; /* Adjusted font size */
+}
+
+.clearButton {
+    padding: 10px;
+    background-color: #ff6961;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Added border radius */
+    font-size: 1rem; /* Adjusted font size */
+}
+
+.clearButton:hover {
+    background-color: #d1483e; /* Adjusted hover color */
+}
+
+.resultsHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.newSearchButton {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Added border radius */
+    font-size: 1rem; /* Adjusted font size */
+}
+
+.resultsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px; /* Added padding */
+    background-color: #e0e0e0; /* Added background color */
+    border-radius: 10px; /* Added border radius */
+}
+
+.resultItem {
+    width: 100vw;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px; /* Added border radius */
+}
