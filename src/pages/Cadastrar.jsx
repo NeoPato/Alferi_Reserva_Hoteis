@@ -12,11 +12,37 @@ import eyeIcon from '../assets/imagens/icones/olho.svg';
 import VisibilidadeSenha from '../Back-End/script/AlternarVisibilidadeSenha';
 import formatCPF  from '../Back-End/script/FormatCPF';
 import tratarMudancaCPF from '../Back-End/script/tratarMudancaCPF ';
+import handleCreateEvent from '../Back-End/server/server.js';
 
 function Cadastrar() {
-    const { senha, setSenha, mostrarSenha, alternarVisibilidadeSenha  } = VisibilidadeSenha();
     const [cpf, setCpf] = useState('');
+    const [email, setEmail] = useState('');
+    const [name, setName] = useState('');
+    const [date, setDate] = useState('');
+    const [tel, setTel] = useState('');
+    const [senha, setSenha] = useState('');
 
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        try {
+            const newEvent = await handleCreateEvent({
+                name: name,
+                cpf: cpf,
+                email: email,
+                dateOfBirth: date,
+                phone: tel,
+                password: senha
+            });
+        } catch (error) {
+            console.error('Erro ao criar evento:', error);
+        }
+    };
+
+    const [vi, setVi] = useState(false); 
+
+    const alternarVisibilidadeSenha = () => {
+        setVi(!vi); 
+    };
     return (
         <div>
             <div className={style.TelaCadastrar}>
@@ -44,34 +70,35 @@ function Cadastrar() {
                         <div className={style.cadastrarBox}>
                             <h2>Cadastrar</h2>
                             <div className={style.inputGroup}>
-                                <input type="text" id="name" placeholder="Digite seu nome"/>
+                                <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Digite seu nome"/>
                             </div>
                             <div className={style.inputGroup}>
                                 <img src={profileIcon} alt="CPF icon" />
-                                <input type="text" id="cpf" name="cpf" value={formatCPF(cpf)} onChange={(e) => tratarMudancaCPF(e, setCpf)} placeholder="Digite seu CPF" maxlength="14"/>
-                            </div>
+                                <input type="text" id="cpf" name="cpf" value={formatCPF(cpf)} onChange={(e) => tratarMudancaCPF(e, setCpf)} placeholder="Digite seu CPF" maxLength={14} />
+                                </div>
                             <div className={style.inputGroup}>
                                 <img src={emailIcon} alt="Email Icon" />
-                                <input type="email" id="email" name="email" placeholder="Digite seu Email" />
+                                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} name="email" placeholder="Digite seu Email" />
                             </div>
                             <div className={style.inputGroup}>
                                 <img src={nascIcon} alt="Nascimento Icon" />
-                                <input type="date" id="dateOfBirth" name="data de nascimento" placeholder="Coloque sua data de nascimento" max="2006-12-31"/>
+                                <input type="date" value={date} onChange={(e) => setDate(e.target.value)} name="data de nascimento" placeholder="Coloque sua data de nascimento" max="2006-12-31"/>
                             </div>
                             <div className={style.inputGroup}>
                                 <img src={telefIcon} alt="Telefone Icon" />
-                                <input type="tel" id="telefone" name="telefone"  maxlength="11" placeholder="Digite o número de telefone"/>
+                                <input type="tel" value={tel} onChange={(e) => setTel(e.target.value)} name="telefone" placeholder="Digite o número de telefone"/>
                                 </div>
                             <div className={style.inputGroup}>
                                 <img src={senhaIcon} alt="Senha Icon" />
-                                <input type={mostrarSenha ? 'text' : 'password'} value={senha} onChange={(e) => setSenha(e.target.value)} placeholder="Digite sua senha" id="senha"/>
+                                <input type={vi ? 'text' : 'password'} value={senha} onChange={(e) => setSenha(e.target.value)} placeholder="Digite sua senha" />
                                 <button className={style.eyeButton} onClick={alternarVisibilidadeSenha}>
                                     <img src={eyeIcon} alt="Mostrar a senha/ ou não"/>
                                 </button>
                             </div>
-                            <button className={style.cadastrarButton} onClick={"../src/server/node.cjs"}>Cadastrar</button>
+                            <button className={style.cadastrarButton} onClick={handleSubmit}>Cadastrar</button>
                         </div>
                     </div>
+                    prisma.$connect
                 </div>
             </div>
         </div>

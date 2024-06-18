@@ -1,14 +1,14 @@
 import { useState } from 'react';
 
 function VisibilidadeSenha() {
-    const [senha, setSenha] = useState('');
+    const [vi, setVi] = useState('');
     const [mostrarSenha, setMostrarSenha] = useState(false);
 
     const alternarVisibilidadeSenha = () => {
         setMostrarSenha(!mostrarSenha);
     };
 
-    return { senha, setSenha, mostrarSenha, alternarVisibilidadeSenha };
+    return { vi, setVi, mostrarSenha, alternarVisibilidadeSenha };
 }
 
 export default VisibilidadeSenha;
