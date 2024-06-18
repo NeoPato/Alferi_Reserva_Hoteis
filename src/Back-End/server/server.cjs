@@ -15,8 +15,8 @@ const createTableQuery = `
         cpf TEXT UNIQUE,
         email TEXT UNIQUE,
         date_of_birth DATE,
-        password TEXT,
-        phone TEXT
+        phone TEXT,
+        password TEXT
     )
 `;
 

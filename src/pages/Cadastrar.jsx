@@ -9,9 +9,9 @@ import senhaIcon from '../assets/imagens/icones/senha.svg';
 import profileIcon from '../assets/imagens/icones/profile.svg';
 import telefIcon from '../assets/imagens/icones/telefone.svg';
 import eyeIcon from '../assets/imagens/icones/olho.svg';
-import VisibilidadeSenha from '../script/AlternarVisibilidadeSenha';
-import formatCPF  from '../script/FormatCPF';
-import tratarMudancaCPF from '../script/tratarMudancaCPF ';
+import VisibilidadeSenha from '../Back-End/script/AlternarVisibilidadeSenha';
+import formatCPF  from '../Back-End/script/FormatCPF';
+import tratarMudancaCPF from '../Back-End/script/tratarMudancaCPF ';
 
 function Cadastrar() {
     const { senha, setSenha, mostrarSenha, alternarVisibilidadeSenha  } = VisibilidadeSenha();

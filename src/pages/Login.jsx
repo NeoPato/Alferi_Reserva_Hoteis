@@ -5,7 +5,7 @@ import twitterIcon from '../assets/imagens/icones/twitter.svg';
 import emailIcon from '../assets/imagens/icones/email.svg'; 
 import senhaIcon from '../assets/imagens/icones/senha.svg';  
 import eyeIcon from '../assets/imagens/icones/olho.svg'
-import VisibilidadeSenha from '../script/AlternarVisibilidadeSenha';
+import VisibilidadeSenha from '../Back-End/script/AlternarVisibilidadeSenha';
 
 function Login() {
     const { senha, setSenha, mostrarSenha, alternarVisibilidadeSenha  } = VisibilidadeSenha();

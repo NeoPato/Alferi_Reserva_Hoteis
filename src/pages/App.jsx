@@ -31,19 +31,19 @@ function App() {
             <div className={style.imagensViagens}>
               <div className={style.Chacara}>
                 <a href="/Viagens">  
-                  <img src="src/assets/imagens/Estados e Cidades/rustic-patio-furniture-house-deck-with-vegetation.jpg" alt="Chácara" />
+                  <img src="src/assets/imagens/Estados e Cidades/rustic-patio-furniture-house-deck-with-vegetation.svg" alt="Chácara" />
                 </a>                
                   <h5>Chácara</h5>
               </div>
               <div className={style.CidadeGrande}>
                 <a href="/Viagens">  
-                  <img src="src/assets/imagens/Estados e Cidades/road-tall-buildings.jpg" alt="Cidade Grande" />
+                  <img src="src/assets/imagens/Estados e Cidades/road-tall-buildings.svg" alt="Cidade Grande" />
                 </a>
                   <h5>Cidade Grande</h5>
               </div>
               <div className={style.Praia}>
                 <a href="/Viagens">  
-                  <img src="src/assets/imagens/Estados e Cidades/vertical-shot-palm-trees-beach-cloudy-sunny-day.jpg" alt="Praia" /> 
+                  <img src="src/assets/imagens/Estados e Cidades/vertical-shot-palm-trees-beach-cloudy-sunny-day.svg" alt="Praia" /> 
                 </a>
                   <h5>Praia</h5>
               </div>
@@ -54,19 +54,19 @@ function App() {
 
             <div className={style.imagensEstados}>
               <div className={style.Parana}>
-                <img src="src\assets\imagens\Estados e Cidades\pexels-drethousand-8571265.jpg" alt="Paraná" />
+                <img src="src\assets\imagens\Estados e Cidades\pexels-drethousand-8571265.svg" alt="Paraná" />
                 <h5>Paraná</h5>
               </div>
               <div className={style.RioDeJaneiro}>
-                <img src="src\assets\imagens\Estados e Cidades\pexels-florencia-potter-82066-351283.jpg" alt="Rio De Janeiro" />
+                <img src="src\assets\imagens\Estados e Cidades\pexels-florencia-potter-82066-351283.svg" alt="Rio De Janeiro" />
                 <h5>Rio De Janeiro</h5>
               </div>
               <div className={style.SantaCatarina}>
-                <img src="src\assets\imagens\Estados e Cidades\pexels-pixabay-433086.jpg" alt="Santa Catarina" />
+                <img src="src\assets\imagens\Estados e Cidades\pexels-pixabay-433086.svg" alt="Santa Catarina" />
                 <h5>Santa Catarina</h5>
               </div>
               <div className={style.Bahia}>
-                <img src="src\assets\imagens\Estados e Cidades\pexels-leonardodourado-14059766.jpg" alt="Bahia" />
+                <img src="src\assets\imagens\Estados e Cidades\pexels-leonardodourado-14059766.svg" alt="Bahia" />
                 <h5>Bahia</h5>
               </div>
             </div>
