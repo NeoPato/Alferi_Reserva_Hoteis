@@ -1,6 +1,6 @@
 -- CreateTable
-CREATE TABLE "Event" (
-    "id" TEXT NOT NULL PRIMARY KEY,
+CREATE TABLE "users" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
     "name" TEXT NOT NULL,
     "cpf" TEXT NOT NULL,
     "email" TEXT NOT NULL,
@@ -10,7 +10,7 @@ CREATE TABLE "Event" (
 );
 
 -- CreateIndex
-CREATE UNIQUE INDEX "Event_cpf_key" ON "Event"("cpf");
+CREATE UNIQUE INDEX "users_cpf_key" ON "users"("cpf");
 
 -- CreateIndex
-CREATE UNIQUE INDEX "Event_email_key" ON "Event"("email");
+CREATE UNIQUE INDEX "users_email_key" ON "users"("email");

@@ -1,4 +1,4 @@
-import  formatCPF  from './FormatCPF'; 
+import formatCPF from "./FormatCPF";
 
 const tratarMudancaCPF = (event, setCpf) => {
     const cpfDigitado = event.target.value;

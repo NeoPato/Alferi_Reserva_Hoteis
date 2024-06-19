@@ -1,14 +1,20 @@
+import { useState } from 'react';
 import style from '../styles/pages/Login.module.css';
 import googleIcon from '../assets/imagens/icones/google.svg';  
 import instagramIcon from '../assets/imagens/icones/instagram.svg';  
 import twitterIcon from '../assets/imagens/icones/twitter.svg'; 
 import emailIcon from '../assets/imagens/icones/email.svg'; 
 import senhaIcon from '../assets/imagens/icones/senha.svg';  
-import eyeIcon from '../assets/imagens/icones/olho.svg'
-import VisibilidadeSenha from '../Back-End/script/AlternarVisibilidadeSenha';
+import eyeIcon from '../assets/imagens/icones/olho.svg';
 
 function Login() {
-    const { senha, setSenha, mostrarSenha, alternarVisibilidadeSenha  } = VisibilidadeSenha();
+    const { senha, setSenha } = useState();
+    const [viewer, setViewer] = useState(false); 
+
+
+    const alternarVisibilidadeSenha = () => {
+        setViewer(!viewer); 
+    };
 
     return (
         <div>
@@ -42,7 +48,7 @@ function Login() {
                             </div>
                             <div className={style.inputGroup}>
                                 <img src={senhaIcon} alt="Senha Icon" />
-                                <input type={mostrarSenha ? 'text' : 'password'} value={senha} onChange={(e) => setSenha(e.target.value)} placeholder="Digite sua senha"/>
+                                <input type={viewer ? 'text' : 'password'} value={senha} onChange={(e) => setSenha(e.target.value)} placeholder="Digite sua senha"/>
                                 <button className={style.eyeButton} onClick={alternarVisibilidadeSenha}>
                                     <img src={eyeIcon} alt="Mostrar a senha/ ou não" />
                                 </button>

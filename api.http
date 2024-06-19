@@ -1,0 +1,15 @@
+POST http://localhost:3333/users
+Content-Type: application/json
+
+{
+    "name":"gabriel",
+    "cpf":"223333333",
+    "email":"coisa@gmail.com",
+    "dateOfBirth":"222222",
+    "phone":"22222222",
+    "password":"sdafsdf22"
+}
+
+###
+
+GET http://localhost:3333/users/1/badge

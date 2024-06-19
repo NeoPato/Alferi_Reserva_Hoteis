@@ -1,0 +1,389 @@
+{
+    "reservas": [
+      {
+        "tipo": "luxo",
+        "descricao": "Suítes luxuosas com serviços exclusivos.",
+        "valor": "Preço sob consulta",
+        "estado": "Paraná",
+        "avaliacao": "⭐⭐⭐⭐⭐",
+        "reserva": "cidade grande"
+      },
+      {
+        "tipo": "suite",
+        "descricao": "Suítes espaçosas com conforto e elegância.",
+        "valor": "A partir de R$ 500,00/noite",
+        "estado": "Paraná",
+        "avaliacao": "⭐⭐⭐⭐",
+        "reserva": "cidade grande"
+      },
+      {
+        "tipo": "duplo",
+        "descricao": "Quarto duplo com duas camas de solteiro.",
+        "valor": "A partir de R$ 300,00/noite",
+        "estado": "Paraná",
+        "avaliacao": "⭐⭐⭐",
+        "reserva": "cidade grande"
+      },
+      {
+        "tipo": "casal",
+        "descricao": "Quarto para casal com cama de casal king size.",
+        "valor": "A partir de R$ 350,00/noite",
+        "estado": "Paraná",
+        "avaliacao": "⭐⭐⭐⭐",
+        "reserva": "cidade grande"
+      },
+      {
+        "tipo": "solteiro",
+        "descricao": "Quarto individual com cama de solteiro.",
+        "valor": "A partir de R$ 250,00/noite",
+        "estado": "Paraná",
+        "avaliacao": "⭐⭐⭐",
+        "reserva": "cidade grande"
+      },
+      {
+        "tipo": "economico",
+        "descricao": "Opção econômica para viajantes com orçamento limitado.",
+        "valor": "A partir de R$ 150,00/noite",
+        "estado": "Paraná",
+        "avaliacao": "⭐⭐",
+        "reserva": "cidade grande"
+      },
+      {
+        "tipo": "luxo",
+        "descricao": "Suítes luxuosas com serviços exclusivos.",
+        "valor": "Preço sob consulta",
+        "estado": "Bahia",
+        "avaliacao": "⭐⭐⭐⭐⭐",
+        "reserva": "praia"
+      },
+      {
+        "tipo": "suite",
+        "descricao": "Suítes espaçosas com conforto e elegância.",
+        "valor": "A partir de R$ 600,00/noite",
+        "estado": "Bahia",
+        "avaliacao": "⭐⭐⭐⭐",
+        "reserva": "praia"
+      },
+      {
+        "tipo": "duplo",
+        "descricao": "Quarto duplo com duas camas de solteiro.",
+        "valor": "A partir de R$ 350,00/noite",
+        "estado": "Bahia",
+        "avaliacao": "⭐⭐⭐",
+        "reserva": "praia"
+      },
+      {
+        "tipo": "casal",
+        "descricao": "Quarto para casal com cama de casal king size.",
+        "valor": "A partir de R$ 400,00/noite",
+        "estado": "Bahia",
+        "avaliacao": "⭐⭐⭐⭐",
+        "reserva": "praia"
+      },
+      {
+        "tipo": "solteiro",
+        "descricao": "Quarto individual com cama de solteiro.",
+        "valor": "A partir de R$ 300,00/noite",
+        "estado": "Bahia",
+        "avaliacao": "⭐⭐⭐",
+        "reserva": "praia"
+      },
+      {
+        "tipo": "economico",
+        "descricao": "Opção econômica para viajantes com orçamento limitado.",
+        "valor": "A partir de R$ 200,00/noite",
+        "estado": "Bahia",
+        "avaliacao": "⭐⭐",
+        "reserva": "praia"
+      },
+      {
+        "tipo": "luxo",
+        "descricao": "Suítes luxuosas com serviços exclusivos.",
+        "valor": "Preço sob consulta",
+        "estado": "Rio de Janeiro",
+        "avaliacao": "⭐⭐⭐⭐⭐",
+        "reserva": "cidade grande"
+      },
+      {
+        "tipo": "suite",
+        "descricao": "Suítes espaçosas com conforto e elegância.",
+        "valor": "A partir de R$ 700,00/noite",
+        "estado": "Rio de Janeiro",
+        "avaliacao": "⭐⭐⭐⭐",
+        "reserva": "cidade grande"
+      },
+      {
+        "tipo": "duplo",
+        "descricao": "Quarto duplo com duas camas de solteiro.",
+        "valor": "A partir de R$ 400,00/noite",
+        "estado": "Rio de Janeiro",
+        "avaliacao": "⭐⭐⭐",
+        "reserva": "cidade grande"
+      },
+      {
+        "tipo": "casal",
+        "descricao": "Quarto para casal com cama de casal king size.",
+        "valor": "A partir de R$ 450,00/noite",
+        "estado": "Rio de Janeiro",
+        "avaliacao": "⭐⭐⭐⭐",
+        "reserva": "cidade grande"
+      },
+      {
+        "tipo": "solteiro",
+        "descricao": "Quarto individual com cama de solteiro.",
+        "valor": "A partir de R$ 350,00/noite",
+        "estado": "Rio de Janeiro",
+        "avaliacao": "⭐⭐⭐",
+        "reserva": "cidade grande"
+      },
+      {
+        "tipo": "economico",
+        "descricao": "Opção econômica para viajantes com orçamento limitado.",
+        "valor": "A partir de R$ 250,00/noite",
+        "estado": "Rio de Janeiro",
+        "avaliacao": "⭐⭐",
+        "reserva": "cidade grande"
+      },
+      {
+        "tipo": "luxo",
+        "descricao": "Suítes luxuosas com serviços exclusivos.",
+        "valor": "Preço sob consulta",
+        "estado": "Santa Catarina",
+        "avaliacao": "⭐⭐⭐⭐⭐",
+        "reserva": "chácara"
+      },
+      {
+        "tipo": "suite",
+        "descricao": "Suítes espaçosas com conforto e elegância.",
+        "valor": "A partir de R$ 550,00/noite",
+        "estado": "Santa Catarina",
+        "avaliacao": "⭐⭐⭐⭐",
+        "reserva": "chácara"
+      },
+      {
+        "tipo": "duplo",
+        "descricao": "Quarto duplo com duas camas de solteiro.",
+        "valor": "A partir de R$ 320,00/noite",
+        "estado": "Santa Catarina",
+        "avaliacao": "⭐⭐⭐",
+        "reserva": "chácara"
+      },
+      {
+        "tipo": "casal",
+        "descricao": "Quarto para casal com cama de casal king size.",
+        "valor": "A partir de R$ 380,00/noite",
+        "estado": "Santa Catarina",
+        "avaliacao": "⭐⭐⭐⭐",
+        "reserva": "chácara"
+      },
+      {
+        "tipo": "solteiro",
+        "descricao": "Quarto individual com cama de solteiro.",
+        "valor": "A partir de R$ 280,00/noite",
+        "estado": "Santa Catarina",
+        "avaliacao": "⭐⭐⭐",
+        "reserva": "chácara"
+      },
+      {
+        "tipo": "economico",
+        "descricao": "Opção econômica para viajantes com orçamento limitado.",
+        "valor": "A partir de R$ 180,00/noite",
+        "estado": "Santa Catarina",
+        "avaliacao": "⭐⭐",
+        "reserva": "chácara"
+      },
+      {
+        "tipo": "luxo",
+        "descricao": "Suítes luxuosas com serviços exclusivos.",
+        "valor": "Preço sob consulta",
+        "estado": "Paraná",
+        "avaliacao": "⭐⭐⭐⭐⭐",
+        "reserva": "chácara"
+      },
+      {
+        "tipo": "suite",
+        "descricao": "Suítes espaçosas com conforto e elegância.",
+        "valor": "A partir de R$ 500,00/noite",
+        "estado": "Paraná",
+        "avaliacao": "⭐⭐⭐⭐",
+        "reserva": "praia"
+      },
+      {
+        "tipo": "duplo",
+        "descricao": "Quarto duplo com duas camas de solteiro.",
+        "valor": "A partir de R$ 300,00/noite",
+        "estado": "Paraná",
+        "avaliacao": "⭐⭐⭐",
+        "reserva": "cidade grande"
+      },
+      {
+        "tipo": "casal",
+        "descricao": "Quarto para casal com cama de casal king size.",
+        "valor": "A partir de R$ 350,00/noite",
+        "estado": "Paraná",
+        "avaliacao": "⭐⭐⭐⭐",
+        "reserva": "cidade grande"
+      },
+      {
+        "tipo": "solteiro",
+        "descricao": "Quarto individual com cama de solteiro.",
+        "valor": "A partir de R$ 250,00/noite",
+        "estado": "Paraná",
+        "avaliacao": "⭐⭐⭐",
+        "reserva": "cidade grande"
+      },
+      {
+        "tipo": "economico",
+        "descricao": "Opção econômica para viajantes com orçamento limitado.",
+        "valor": "A partir de R$ 150,00/noite",
+        "estado": "Paraná",
+        "avaliacao": "⭐⭐",
+        "reserva": "cidade grande"
+      },
+      {
+        "tipo": "luxo",
+        "descricao": "Suítes luxuosas com serviços exclusivos.",
+        "valor": "Preço sob consulta",
+        "estado": "Bahia",
+        "avaliacao": "⭐⭐⭐⭐⭐",
+        "reserva": "cidade grande"
+      },
+      {
+        "tipo": "suite",
+        "descricao": "Suítes espaçosas com conforto e elegância.",
+        "valor": "A partir de R$ 600,00/noite",
+        "estado": "Bahia",
+        "avaliacao": "⭐⭐⭐⭐",
+        "reserva": "cidade grande"
+      },
+      {
+        "tipo": "duplo",
+        "descricao": "Quarto duplo com duas camas de solteiro.",
+        "valor": "A partir de R$ 350,00/noite",
+        "estado": "Bahia",
+        "avaliacao": "⭐⭐⭐",
+        "reserva": "praia"
+      },
+      {
+        "tipo": "casal",
+        "descricao": "Quarto para casal com cama de casal king size.",
+        "valor": "A partir de R$ 400,00/noite",
+        "estado": "Bahia",
+        "avaliacao": "⭐⭐⭐⭐",
+        "reserva": "praia"
+      },
+      {
+        "tipo": "solteiro",
+        "descricao": "Quarto individual com cama de solteiro.",
+        "valor": "A partir de R$ 300,00/noite",
+        "estado": "Bahia",
+        "avaliacao": "⭐⭐⭐",
+        "reserva": "chácara"
+      },
+      {
+        "tipo": "economico",
+        "descricao": "Opção econômica para viajantes com orçamento limitado.",
+        "valor": "A partir de R$ 200,00/noite",
+        "estado": "Bahia",
+        "avaliacao": "⭐⭐",
+        "reserva": "chácara"
+      },
+      {
+        "tipo": "luxo",
+        "descricao": "Suítes luxuosas com serviços exclusivos.",
+        "valor": "Preço sob consulta",
+        "estado": "Rio de Janeiro",
+        "avaliacao": "⭐⭐⭐⭐⭐",
+        "reserva": "praia"
+      },
+      {
+        "tipo": "suite",
+        "descricao": "Suítes espaçosas com conforto e elegância.",
+        "valor": "A partir de R$ 700,00/noite",
+        "estado": "Rio de Janeiro",
+        "avaliacao": "⭐⭐⭐⭐",
+        "reserva": "chácara"
+      },
+      {
+        "tipo": "duplo",
+        "descricao": "Quarto duplo com duas camas de solteiro.",
+        "valor": "A partir de R$ 400,00/noite",
+        "estado": "Rio de Janeiro",
+        "avaliacao": "⭐⭐⭐",
+        "reserva": "chácara"
+      },
+      {
+        "tipo": "casal",
+        "descricao": "Quarto para casal com cama de casal king size.",
+        "valor": "A partir de R$ 450,00/noite",
+        "estado": "Rio de Janeiro",
+        "avaliacao": "⭐⭐⭐⭐",
+        "reserva": "praia"
+      },
+      {
+        "tipo": "solteiro",
+        "descricao": "Quarto individual com cama de solteiro.",
+        "valor": "A partir de R$ 350,00/noite",
+        "estado": "Rio de Janeiro",
+        "avaliacao": "⭐⭐⭐",
+        "reserva": "praia"
+      },
+      {
+        "tipo": "economico",
+        "descricao": "Opção econômica para viajantes com orçamento limitado.",
+        "valor": "A partir de R$ 250,00/noite",
+        "estado": "Rio de Janeiro",
+        "avaliacao": "⭐⭐",
+        "reserva": "praia"
+      },
+      {
+        "tipo": "luxo",
+        "descricao": "Suítes luxuosas com serviços exclusivos.",
+        "valor": "Preço sob consulta",
+        "estado": "Santa Catarina",
+        "avaliacao": "⭐⭐⭐⭐⭐",
+        "reserva": "praia"
+      },
+      {
+        "tipo": "suite",
+        "descricao": "Suítes espaçosas com conforto e elegância.",
+        "valor": "A partir de R$ 550,00/noite",
+        "estado": "Santa Catarina",
+        "avaliacao": "⭐⭐⭐⭐",
+        "reserva": "cidade grande"
+      },
+      {
+        "tipo": "duplo",
+        "descricao": "Quarto duplo com duas camas de solteiro.",
+        "valor": "A partir de R$ 320,00/noite",
+        "estado": "Santa Catarina",
+        "avaliacao": "⭐⭐⭐",
+        "reserva": "cidade grande"
+      },
+      {
+        "tipo": "casal",
+        "descricao": "Quarto para casal com cama de casal king size.",
+        "valor": "A partir de R$ 380,00/noite",
+        "estado": "Santa Catarina",
+        "avaliacao": "⭐⭐⭐⭐",
+        "reserva": "chácara"
+      },
+      {
+        "tipo": "solteiro",
+        "descricao": "Quarto individual com cama de solteiro.",
+        "valor": "A partir de R$ 280,00/noite",
+        "estado": "Santa Catarina",
+        "avaliacao": "⭐⭐⭐",
+        "reserva": "chácara"
+      },
+      {
+        "tipo": "economico",
+        "descricao": "Opção econômica para viajantes com orçamento limitado.",
+        "valor": "A partir de R$ 180,00/noite",
+        "estado": "Santa Catarina",
+        "avaliacao": "⭐⭐",
+        "reserva": "chácara"
+      }
+    ]
+  }
+  
