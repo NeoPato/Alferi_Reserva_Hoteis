@@ -6,11 +6,12 @@ import twitterIcon from '../assets/imagens/icones/twitter.svg';
 import emailIcon from '../assets/imagens/icones/email.svg'; 
 import senhaIcon from '../assets/imagens/icones/senha.svg';  
 import eyeIcon from '../assets/imagens/icones/olho.svg';
+import setLogin from '../components/login';
 
 function Login() {
-    const { senha, setSenha } = useState();
+    const [email, setEmail] = useState('');
+    const [senha, setSenha] = useState('');
     const [viewer, setViewer] = useState(false); 
-
 
     const alternarVisibilidadeSenha = () => {
         setViewer(!viewer); 
@@ -44,7 +45,7 @@ function Login() {
                             <h2>Login</h2>
                             <div className={style.inputGroup}>
                                 <img src={emailIcon} alt="Email Icon" />
-                                <input type="email" name="email" placeholder="Digite seu Email" />
+                                <input type="email" value={email} name="email" onChange={(e) => setEmail(e.target.value)} placeholder="Digite seu Email" />
                             </div>
                             <div className={style.inputGroup}>
                                 <img src={senhaIcon} alt="Senha Icon" />
@@ -53,7 +54,7 @@ function Login() {
                                     <img src={eyeIcon} alt="Mostrar a senha/ ou não" />
                                 </button>
                             </div>
-                            <button className={style.loginButton}>Login</button>
+                            <button className={style.loginButton} onClick={() => setLogin(email, senha)}>Login</button>
                         </div>
                     </div>
                 </div>

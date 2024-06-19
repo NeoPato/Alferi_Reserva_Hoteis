@@ -11,74 +11,93 @@ import telefIcon from '../assets/imagens/icones/telefone.svg';
 import eyeIcon from '../assets/imagens/icones/olho.svg';
 import formatCPF from '../components/FormatCPF';
 import tratarMudancaCPF from '../components/tratarMudancaCPF ';
-import {api} from '../lib/server'
-// Componente principal para o formulário de cadastro
+import { api } from '/src/lib/server.ts';
+
 function Cadastrar() {
-    // Estados para os campos do formulário
+    
+    const [name, setName] = useState('');
     const [cpf, setCpf] = useState('');
     const [email, setEmail] = useState('');
-    const [name, setName] = useState('');
     const [dateOfBirth, setDateOfBirth] = useState('');
     const [phone, setPhone] = useState('');
     const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
     const [viewer, setViewer] = useState(false); 
 
-    // Alternar entre mostrar e ocultar a senha
     const alternarVisibilidadeSenha = () => {
         setViewer(!viewer); 
     };      
 
-    // Função para lidar com o envio do formulário
-    const handleSubmit = async (event) => {
-        event.preventDefault();
 
-        // Validações básicas
+    const handleInsert = () => {
         if (!name) {
-            setError('Por favor, digite seu nome.');
+            setInfoName("Please enter a name");
             return;
+        } else {
+            setInfoName("");
         }
+        
         if (!cpf) {
-            setError('Por favor, digite seu CPF.');
+            setInfoCpf("Please enter a CPF");
             return;
+        } else {
+            setInfoCpf("");
         }
+        
         if (!email) {
-            setError('Por favor, digite seu email.');
+            setInfoEmail("Please enter an email");
             return;
+        } else {
+            setInfoEmail("");
         }
+        
         if (!dateOfBirth) {
-            setError('Por favor, selecione sua data de nascimento.');
+            setInfoDateOfBirth("Please enter a date of birth");
             return;
+        } else {
+            setInfoDateOfBirth("");
         }
+        
         if (!phone) {
-            setError('Por favor, digite seu telefone.');
+            setInfoPhone("Please enter a phone number");
             return;
+        } else {
+            setInfoPhone("");
         }
+        
         if (!password) {
-            setError('Por favor, digite sua senha.');
+            setInfoPassword("Please enter a password");
             return;
+        } else {
+            setInfoPassword("");
         }
-
-        try {
-            // Enviar solicitação de cadastro para a API
-            const response = await api.post('/users', {
-                name,
-                cpf,
-                email,
-                dateOfBirth,
-                phone,
-                password,
-                plan: 'Basic'
-            });
-
-            console.log(response.data);
-
-            // Redirecionar para a página de login após o cadastro
-            window.location.href = "/log-in-account";
-        } catch (error) {
-            console.error(error);
-            setError('Não foi possível criar sua conta.');
-        }
-    };
+        
+        if (!confirmPassword) {
+            setInfoConfirmPassword("Please confirm your password");
+            return;
+        } else {
+            setInfoConfirmPassword("");
+        } 
+    
+        api.post('/users', {
+          name,
+          email,
+          password,
+          plan: 'Basic'   
+        }).then(function(response) {
+          console.log(response)
+          navigate("/log-in-account");
+        }).catch(function(error) {
+          console.log(error)
+          setError("Unable to create your account");      
+        })
+        
+        setInfoName("");
+        setInfoEmail("");
+        setInfoPassword("");
+        setInfoConfirmPassword("");
+        setError("");
+      };
     
     return (
         <div className={style.TelaCadastrar}>

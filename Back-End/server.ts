@@ -4,8 +4,13 @@ import { registerUsers } from "./routes/register-users.js";
 import { getUsersBadge } from "./routes/get-users-badge.js";
 import fastifySwaggerUi from "@fastify/swagger-ui";
 import fastifySwagger from "@fastify/swagger";
+import fastifyCors from "@fastify/cors"
 
 const app = fastify();
+
+app.register(fastifyCors, {
+  origin: '*',
+});
 
 app.register(fastifySwagger, {
   swagger: {

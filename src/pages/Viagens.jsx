@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Footer from '../components/footer.jsx';
 import style from '../styles/pages/Viagens.module.css';
+import quartos from '../const/quartos.json'
+import Card from '../components/Card.jsx';
 
 function Viagens() {
+    const [reservas, setReservas] = useState([]);
+
+
     return (
         <div className={style.TelaReserva}>
             <div className={style.mainContent}>
@@ -55,12 +60,21 @@ function Viagens() {
                         <button className={style.newSearchButton}>Nova Pesquisa</button>
                     </div>
                     <div className={style.resultsContainer}>
-                        {/* Placeholder for search results */}
-                        <div className={style.resultItem}></div>
-                        <div className={style.resultItem}></div>
-                        <div className={style.resultItem}></div>
-                        <div className={style.resultItem}></div>
-                        <div className={style.resultItem}></div>
+                        <div>
+                            <div>
+                                {quartos.map((quartos) => (
+                                <Card
+                                tipo={quartos.tipo}
+                                descricao={quartos.descricao}
+                                valor={quartos.valor}
+                                estado={quartos.estado}
+                                avaliacao={quartos.avaliacao}
+                                reserva={quartos.reserva}
+                                imagem={quartos.imagem}
+                                 />
+                                ))}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
