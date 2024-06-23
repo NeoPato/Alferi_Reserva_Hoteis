@@ -25,7 +25,6 @@ function Cadastrar() {
     const [viewer, setViewer] = useState(false); 
     const navigate = useNavigate();
 
-
     const formatCPF = (cpf) => {
         // Remove qualquer caractere que não seja dígito
         cpf = cpf.replace(/\D/g, '');
@@ -45,14 +44,12 @@ function Cadastrar() {
         return cpf;
     };
 
-
     const alternarVisibilidadeSenha = () => {
         setViewer(!viewer); 
     };      
 
-
-    const handleSubmit = async (users) => {
-        users.preventDefault();
+    const handleSubmit = async (e) => {
+        e.preventDefault();
     
         // Validações básicas
         if (!name || !cpf || !email || !dateOfBirth || !phone || !password) {
@@ -106,34 +103,36 @@ function Cadastrar() {
                     <div className={style.cadastrarBox}>
                         <h2>Cadastrar</h2>
                         {/* Campos do formulário */}
-                        <div className={style.inputGroup}>
-                            <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Digite seu nome"/>
-                        </div>
-                        <div className={style.inputGroup}>
-                            <img src={profileIcon} alt="Ícone de CPF" />
-                            <input type="text" value={formatCPF(cpf)} onChange={(e) => setCpf(e,target.value)} placeholder="Digite seu CPF" maxLength={14} />
-                        </div>
-                        <div className={style.inputGroup}>
-                            <img src={emailIcon} alt="Ícone de Email" />
-                            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} name="email" placeholder="Digite seu Email" />
-                        </div>
-                        <div className={style.inputGroup}>
-                            <img src={nascIcon} alt="Ícone de Nascimento" />
-                            <input type="date" value={dateOfBirth} onChange={(e) => setDateOfBirth(e.target.value)} name="data de nascimento" placeholder="Coloque sua data de nascimento" max="2006-12-31"/>
-                        </div>
-                        <div className={style.inputGroup}>
-                            <img src={telefIcon} alt="Ícone de Telefone" />
-                            <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} name="telefone" placeholder="Digite o número de telefone"/>
-                        </div>
-                        <div className={style.inputGroup}>
-                            <img src={senhaIcon} alt="Ícone de Senha" />
-                            <input type={viewer ? 'text' : 'password'} value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Digite sua senha" />
-                            <button type="button" className={style.eyeButton} onClick={alternarVisibilidadeSenha}>
-                                <img src={eyeIcon} alt="Mostrar a senha/ou não"/>
-                            </button>
-                        </div>
-                        {/* Botão de envio do formulário */}
-                        <button type="submit" onClick={handleSubmit} className={style.cadastrarButton}>Cadastrar</button>
+                        <form onSubmit={handleSubmit}>
+                            <div className={style.inputGroup}>
+                                <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Digite seu nome"/>
+                            </div>
+                            <div className={style.inputGroup}>
+                                <img src={profileIcon} alt="Ícone de CPF" />
+                                <input type="text" value={formatCPF(cpf)} onChange={(e) => setCpf(e.target.value)} placeholder="Digite seu CPF" maxLength={14} />
+                            </div>
+                            <div className={style.inputGroup}>
+                                <img src={emailIcon} alt="Ícone de Email" />
+                                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} name="email" placeholder="Digite seu Email" />
+                            </div>
+                            <div className={style.inputGroup}>
+                                <img src={nascIcon} alt="Ícone de Nascimento" />
+                                <input type="date" value={dateOfBirth} onChange={(e) => setDateOfBirth(e.target.value)} name="data de nascimento" placeholder="Coloque sua data de nascimento" max="2006-12-31"/>
+                            </div>
+                            <div className={style.inputGroup}>
+                                <img src={telefIcon} alt="Ícone de Telefone" />
+                                <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} name="telefone" placeholder="Digite o número de telefone"/>
+                            </div>
+                            <div className={style.inputGroup}>
+                                <img src={senhaIcon} alt="Ícone de Senha" />
+                                <input type={viewer ? 'text' : 'password'} value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Digite sua senha" />
+                                <button type="button" className={style.eyeButton} onClick={alternarVisibilidadeSenha}>
+                                    <img src={eyeIcon} alt="Mostrar a senha/ou não"/>
+                                </button>
+                            </div>
+                            {/* Botão de envio do formulário */}
+                            <button type="submit" className={style.cadastrarButton}>Cadastrar</button>
+                        </form>
                     </div>
                 </div>
             </div>
