@@ -9,9 +9,9 @@ import senhaIcon from '../assets/imagens/icones/senha.svg';
 import profileIcon from '../assets/imagens/icones/profile.svg';
 import telefIcon from '../assets/imagens/icones/telefone.svg';
 import eyeIcon from '../assets/imagens/icones/olho.svg';
-import formatCPF from '../components/FormatCPF';
-import tratarMudancaCPF from '../components/tratarMudancaCPF ';
 import { api } from '/src/lib/server.ts';
+import { useNavigate } from 'react-router-dom';
+
 
 function Cadastrar() {
     
@@ -23,81 +23,60 @@ function Cadastrar() {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const [viewer, setViewer] = useState(false); 
+    const navigate = useNavigate();
+
+
+    const formatCPF = (cpf) => {
+        // Remove qualquer caractere que não seja dígito
+        cpf = cpf.replace(/\D/g, '');
+        
+        // Limita o comprimento a 11 dígitos
+        cpf = cpf.substring(0, 11);
+        
+        // Formata o CPF
+        if (cpf.length <= 6) {
+            cpf = cpf.replace(/(\d{3})(\d{1,3})/, '$1.$2');
+        } else if (cpf.length <= 9) {
+            cpf = cpf.replace(/(\d{3})(\d{3})(\d{1,3})/, '$1.$2.$3');
+        } else {
+            cpf = cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{1,2})/, '$1.$2.$3-$4');
+        }
+
+        return cpf;
+    };
+
 
     const alternarVisibilidadeSenha = () => {
         setViewer(!viewer); 
     };      
 
 
-    const handleInsert = () => {
-        if (!name) {
-            setInfoName("Please enter a name");
-            return;
-        } else {
-            setInfoName("");
-        }
-        
-        if (!cpf) {
-            setInfoCpf("Please enter a CPF");
-            return;
-        } else {
-            setInfoCpf("");
-        }
-        
-        if (!email) {
-            setInfoEmail("Please enter an email");
-            return;
-        } else {
-            setInfoEmail("");
-        }
-        
-        if (!dateOfBirth) {
-            setInfoDateOfBirth("Please enter a date of birth");
-            return;
-        } else {
-            setInfoDateOfBirth("");
-        }
-        
-        if (!phone) {
-            setInfoPhone("Please enter a phone number");
-            return;
-        } else {
-            setInfoPhone("");
-        }
-        
-        if (!password) {
-            setInfoPassword("Please enter a password");
-            return;
-        } else {
-            setInfoPassword("");
-        }
-        
-        if (!confirmPassword) {
-            setInfoConfirmPassword("Please confirm your password");
-            return;
-        } else {
-            setInfoConfirmPassword("");
-        } 
+    const handleSubmit = async (users) => {
+        users.preventDefault();
     
-        api.post('/users', {
-          name,
-          email,
-          password,
-          plan: 'Basic'   
-        }).then(function(response) {
-          console.log(response)
-          navigate("/log-in-account");
-        }).catch(function(error) {
-          console.log(error)
-          setError("Unable to create your account");      
-        })
-        
-        setInfoName("");
-        setInfoEmail("");
-        setInfoPassword("");
-        setInfoConfirmPassword("");
-        setError("");
-      };
+        // Validações básicas
+        if (!name || !cpf || !email || !dateOfBirth || !phone || !password) {
+            setError('Por favor, preencha todos os campos.');
+            return;
+        }
+    
+        try {
+            const response = await api.post('/users', {
+                name,
+                cpf,
+                email,
+                dateOfBirth,
+                phone,
+                password,
+            });
+            
+            // Limpar campos após o envio bem-sucedido
+            navigate('/login');
+
+        } catch (error) {
+            setError('Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.');
+        }
+    };    
     
     return (
         <div className={style.TelaCadastrar}>
@@ -120,12 +99,11 @@ function Cadastrar() {
                     <div className={style.register}>
                         <p>Caso você tenha uma conta, aperte este botão</p>
                         <br />
-                        <a href="/login">Logar</a>
+                        <a href="/login" >Logar</a>
                     </div>
                 </div>
                 <div className={style.rightPanel}>
-                    {/* Formulário de cadastro */}
-                    <form className={style.cadastrarBox} onSubmit={handleSubmit}>
+                    <div className={style.cadastrarBox}>
                         <h2>Cadastrar</h2>
                         {/* Campos do formulário */}
                         <div className={style.inputGroup}>
@@ -133,7 +111,7 @@ function Cadastrar() {
                         </div>
                         <div className={style.inputGroup}>
                             <img src={profileIcon} alt="Ícone de CPF" />
-                            <input type="text" id="cpf" name="cpf" value={formatCPF(cpf)} onChange={(e) => tratarMudancaCPF(e, setCpf)} placeholder="Digite seu CPF" maxLength={14} />
+                            <input type="text" value={formatCPF(cpf)} onChange={(e) => setCpf(e,target.value)} placeholder="Digite seu CPF" maxLength={14} />
                         </div>
                         <div className={style.inputGroup}>
                             <img src={emailIcon} alt="Ícone de Email" />
@@ -155,8 +133,8 @@ function Cadastrar() {
                             </button>
                         </div>
                         {/* Botão de envio do formulário */}
-                        <button type="submit" className={style.cadastrarButton}>Cadastrar</button>
-                    </form>
+                        <button type="submit" onClick={handleSubmit} className={style.cadastrarButton}>Cadastrar</button>
+                    </div>
                 </div>
             </div>
         </div>

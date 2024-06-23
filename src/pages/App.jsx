@@ -18,10 +18,7 @@ function App() {
               <input type="date" id='pesquisar_dataEntrada' placeholder='Data chegada'/>
               <input type="date" id='pesquisar_dataSaida' placeholder='Data Saída'/>
               <input type="number" id='pesquisar_QuantidadeP' placeholder='Quantidade de Pessoas'/>
-              <input type="checkbox" id="checkbox_Criança"/>
-              <label for="checkbox">Viajando com Crianças?</label>
-              <input type="checkbox" id="checkbox_Pets"/>
-              <label for="checkbox">Viajando com Pets?</label>
+              <button id='bt_pesquisa'><img src="src/assets/imagens/icones/lupa.svg" alt="Pesquisa" /></button>
             </div>
             
             <div className={style.Maps}></div>

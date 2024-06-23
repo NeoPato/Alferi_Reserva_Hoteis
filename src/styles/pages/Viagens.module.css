@@ -1,31 +1,40 @@
 .TelaReserva {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: auto;
     background-color: #f4f4f4; 
-    width: 100vw;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .mainContent {
     display: flex;
 
 }
+span{
+    color: black;
+}
 
 .leftPane {
+    gap: 30px;
+    margin: 10px;
     display: block;
     width: 20%;
+    border-top: 10px;
     background-color: #f0f0f0;
 }
 
 .rightPane {
+    margin: 0, 10px;
+    gap: 30px;
     width: 80%;
+    height: auto;
     padding: 20px;
 }
 
 .formContainer {
     display: flex;
     flex-direction: column;
-    background-color: #fff; 
     padding: 20px;
     border-radius: 10px; 
 }

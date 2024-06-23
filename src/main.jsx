@@ -6,7 +6,6 @@ import Login from './pages/Login'
 import Cadastrar from './pages/Cadastrar'
 import Pagemento from './pages/Pagamento';
 import './styles/index.css'
-
 import {
   createBrowserRouter,
   RouterProvider,
@@ -34,7 +33,7 @@ const router = createBrowserRouter([
   {
     path: "/pagamento",
     element: < Pagemento/>,
-  }
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

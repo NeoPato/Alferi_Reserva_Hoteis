@@ -1,4 +1,3 @@
-
 .TelaPrincipal {
   display: flex;
   flex-direction: column;
@@ -8,7 +7,7 @@
   width: 100%;
   background-color: #fff;
 }
-.TelaPrincipal h5, h4, h1{
+.TelaPrincipal h1, h4, h5 {
   color: #1C1C1C;
 }
 
@@ -23,16 +22,27 @@
   margin-bottom: 20px;
 }
 
-.Inputs input, label{
+.Inputs input, label, button {
   background-color: #deddc8;
   color: #2A2A2A;
   margin-bottom: 10px;
   text-decoration: none;
 }
 
+.Inputs button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #deddc8;
+  border: none;
+  cursor: pointer;
+}
 
-.imagensViagens,
-.imagensEstados {
+.Inputs img {
+  height: 25px;
+}
+
+.imagensViagens, .imagensEstados {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -43,12 +53,13 @@
   width: 214px; 
   height: 310px;  
 }
-.imagensEstados img{
+
+.imagensEstados img {
   width: 405px; 
   height: 295px;  
 }
 
-.Chacara h5, .CidadeGrande h5, .Praia h5, .Parana h5, .RioDeJaneiro h5, .SantaCatarina h5, .Bahia h5{
+.TravelType h5, .StateAvailability h5 {
   margin: 10px 0 0 0; 
   opacity: 0.9;
   font-size: 16px; 

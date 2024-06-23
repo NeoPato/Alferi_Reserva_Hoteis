@@ -35,9 +35,6 @@
 }
 
 .socialButton {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
     width: 80%;
     padding: 10px;
     margin: 10px 0;
@@ -62,8 +59,11 @@
     font-size: 1em;
 }
 
-.register a, p {
+.register a, p{
     color: #000;
+}
+
+.register a:hover{
     font-weight: bold;
 }
 
@@ -123,12 +123,19 @@
 }
 
 .loginButton {
-    width: 100%;
-    padding: 10px;
-    background-color: #000;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.2em;
-}
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding */
+    background-color: #000; /* Black background */
+    color: #C0C0C0; /* Silver text */
+    border: none; /* Remove borders */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer/hand icon on hover */
+    font-weight: bold; /* Bold text */
+    font-size: 1.2em; /* Increase font size */
+    transition: opacity 0.5s; /* Transition effect for opacity */
+  }
+  
+  .loginButton:hover {
+    opacity: 0.8; /* Reduced opacity on hover */
+  }
+  

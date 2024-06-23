@@ -1,7 +1,7 @@
 import { FastifyInstance } from "fastify";
 import { z } from "zod";
 import { ZodTypeProvider } from "fastify-type-provider-zod";
-import { prisma } from "../lib/prisma.js";
+import {prisma} from "../lib/prisma.js"
 
 export async function registerUsers (app: FastifyInstance) {
     app
@@ -11,8 +11,8 @@ export async function registerUsers (app: FastifyInstance) {
             body: z.object({
                 name: z.string().min(1),
                 cpf: z.string().max(14),
-                email: z.string().email(),
-                dateOfBirth: z.string().max(8),
+                email: z.string().email(),  
+                dateOfBirth: z.string(),                
                 phone: z.string().max(9),
                 password: z.string().min(5),
             }),
@@ -71,4 +71,3 @@ export async function registerUsers (app: FastifyInstance) {
         return reply.status(201).send({userId: users.id})
     })
 }
-

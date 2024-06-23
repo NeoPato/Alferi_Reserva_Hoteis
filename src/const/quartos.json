@@ -1,218 +1,242 @@
 [
   {
-    "tipo": "luxo",
-    "descricao": "Suítes luxuosas com serviços exclusivos.",
-    "valor": "Preço sob consulta",
+    "tipo": "Luxo",
+    "descricao": "Suítes Luxuosas Com Serviços Exclusivos.",
+    "valor": "Preço Sob Consulta",
     "estado": "Paraná",
     "avaliacao": "⭐⭐⭐⭐⭐",
-    "reserva": "cidade grande",
-    "imagem": "src/assets/imagens/hoteis/praia.jpg"
+    "reserva": "Cidade Grande",
+    "imagem": "src/assets/imagens/hoteis/praia.jpg",
+    "disponivel": true
   },
   {
-    "tipo": "suite",
-    "descricao": "Suítes espaçosas com conforto e elegância.",
-    "valor": "A partir de R$ 500,00/noite",
+    "tipo": "Suite",
+    "descricao": "Suítes Espaçosas Com Conforto E Elegância.",
+    "valor": "A Partir De R$ 500,00/Noite",
     "estado": "Paraná",
     "avaliacao": "⭐⭐⭐⭐",
-    "reserva": "cidade grande",
-    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg"
+    "reserva": "Cidade Grande",
+    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg",
+    "disponivel": false
   },
   {
-    "tipo": "duplo",
-    "descricao": "Quarto duplo com duas camas de solteiro.",
-    "valor": "A partir de R$ 300,00/noite",
+    "tipo": "Duplo",
+    "descricao": "Quarto Duplo Com Duas Camas De Solteiro.",
+    "valor": "A Partir De R$ 300,00/Noite",
     "estado": "Paraná",
     "avaliacao": "⭐⭐⭐",
-    "reserva": "cidade grande",
-    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg"
+    "reserva": "Cidade Grande",
+    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg",
+    "disponivel": true
   },
   {
-    "tipo": "casal",
-    "descricao": "Quarto para casal com cama de casal king size.",
-    "valor": "A partir de R$ 350,00/noite",
+    "tipo": "Casal",
+    "descricao": "Quarto Para Casal Com Cama De Casal King Size.",
+    "valor": "A Partir De R$ 350,00/Noite",
     "estado": "Paraná",
     "avaliacao": "⭐⭐⭐⭐",
-    "reserva": "cidade grande",
-    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg"
+    "reserva": "Cidade Grande",
+    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg",
+    "disponivel": true
   },
   {
-    "tipo": "solteiro",
-    "descricao": "Quarto individual com cama de solteiro.",
-    "valor": "A partir de R$ 250,00/noite",
+    "tipo": "Solteiro",
+    "descricao": "Quarto Individual Com Cama De Solteiro.",
+    "valor": "A Partir De R$ 250,00/Noite",
     "estado": "Paraná",
     "avaliacao": "⭐⭐⭐",
-    "reserva": "cidade grande",
-    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg"
+    "reserva": "Cidade Grande",
+    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg",
+    "disponivel": false
   },
   {
-    "tipo": "economico",
-    "descricao": "Opção econômica para viajantes com orçamento limitado.",
-    "valor": "A partir de R$ 150,00/noite",
+    "tipo": "Econômico",
+    "descricao": "Opção Econômica Para Viajantes Com Orçamento Limitado.",
+    "valor": "A Partir De R$ 150,00/Noite",
     "estado": "Paraná",
     "avaliacao": "⭐⭐",
-    "reserva": "cidade grande",
-    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg"
+    "reserva": "Cidade Grande",
+    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg",
+    "disponivel": true
   },
   {
-    "tipo": "luxo",
-    "descricao": "Suítes luxuosas com serviços exclusivos.",
-    "valor": "Preço sob consulta",
+    "tipo": "Luxo",
+    "descricao": "Suítes Luxuosas Com Serviços Exclusivos.",
+    "valor": "Preço Sob Consulta",
     "estado": "Bahia",
     "avaliacao": "⭐⭐⭐⭐⭐",
-    "reserva": "praia",
-    "imagem": "src/assets/imagens/hoteis/praia.jpg"
+    "reserva": "Praia",
+    "imagem": "src/assets/imagens/hoteis/praia.jpg",
+    "disponivel": false
   },
   {
-    "tipo": "suite",
-    "descricao": "Suítes espaçosas com conforto e elegância.",
-    "valor": "A partir de R$ 600,00/noite",
+    "tipo": "Suite",
+    "descricao": "Suítes Espaçosas Com Conforto E Elegância.",
+    "valor": "A Partir De R$ 600,00/Noite",
     "estado": "Bahia",
     "avaliacao": "⭐⭐⭐⭐",
-    "reserva": "praia",
-    "imagem": "src/assets/imagens/hoteis/praia.jpg"
+    "reserva": "Praia",
+    "imagem": "src/assets/imagens/hoteis/praia.jpg",
+    "disponivel": true
   },
   {
-    "tipo": "duplo",
-    "descricao": "Quarto duplo com duas camas de solteiro.",
-    "valor": "A partir de R$ 350,00/noite",
+    "tipo": "Duplo",
+    "descricao": "Quarto Duplo Com Duas Camas De Solteiro.",
+    "valor": "A Partir De R$ 350,00/Noite",
     "estado": "Bahia",
     "avaliacao": "⭐⭐⭐",
-    "reserva": "praia",
-    "imagem": "src/assets/imagens/hoteis/praia.jpg"
+    "reserva": "Praia",
+    "imagem": "src/assets/imagens/hoteis/praia.jpg",
+    "disponivel": true
   },
   {
-    "tipo": "casal",
-    "descricao": "Quarto para casal com cama de casal king size.",
-    "valor": "A partir de R$ 400,00/noite",
+    "tipo": "Casal",
+    "descricao": "Quarto Para Casal Com Cama De Casal King Size.",
+    "valor": "A Partir De R$ 400,00/Noite",
     "estado": "Bahia",
     "avaliacao": "⭐⭐⭐⭐",
-    "reserva": "praia",
-    "imagem": "src/assets/imagens/hoteis/praia.jpg"
+    "reserva": "Praia",
+    "imagem": "src/assets/imagens/hoteis/praia.jpg",
+    "disponivel": false
   },
   {
-    "tipo": "solteiro",
-    "descricao": "Quarto individual com cama de solteiro.",
-    "valor": "A partir de R$ 300,00/noite",
+    "tipo": "Solteiro",
+    "descricao": "Quarto Individual Com Cama De Solteiro.",
+    "valor": "A Partir De R$ 300,00/Noite",
     "estado": "Bahia",
     "avaliacao": "⭐⭐⭐",
-    "reserva": "praia",
-    "imagem": "src/assets/imagens/hoteis/praia.jpg"
+    "reserva": "Praia",
+    "imagem": "src/assets/imagens/hoteis/praia.jpg",
+    "disponivel": true
   },
   {
-    "tipo": "economico",
-    "descricao": "Opção econômica para viajantes com orçamento limitado.",
-    "valor": "A partir de R$ 200,00/noite",
+    "tipo": "Econômico",
+    "descricao": "Opção Econômica Para Viajantes Com Orçamento Limitado.",
+    "valor": "A Partir De R$ 200,00/Noite",
     "estado": "Bahia",
     "avaliacao": "⭐⭐",
-    "reserva": "praia",
-    "imagem": "src/assets/imagens/hoteis/praia.jpg"
+    "reserva": "Praia",
+    "imagem": "src/assets/imagens/hoteis/praia.jpg",
+    "disponivel": true
   },
   {
-    "tipo": "luxo",
-    "descricao": "Suítes luxuosas com serviços exclusivos.",
-    "valor": "Preço sob consulta",
-    "estado": "Rio de Janeiro",
+    "tipo": "Luxo",
+    "descricao": "Suítes Luxuosas Com Serviços Exclusivos.",
+    "valor": "Preço Sob Consulta",
+    "estado": "Rio De Janeiro",
     "avaliacao": "⭐⭐⭐⭐⭐",
-    "reserva": "cidade grande",
-    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg"
+    "reserva": "Cidade Grande",
+    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg",
+    "disponivel": true
   },
   {
-    "tipo": "suite",
-    "descricao": "Suítes espaçosas com conforto e elegância.",
-    "valor": "A partir de R$ 700,00/noite",
-    "estado": "Rio de Janeiro",
+    "tipo": "Suite",
+    "descricao": "Suítes Espaçosas Com Conforto E Elegância.",
+    "valor": "A Partir De R$ 700,00/Noite",
+    "estado": "Rio De Janeiro",
     "avaliacao": "⭐⭐⭐⭐",
-    "reserva": "cidade grande",
-    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg"
+    "reserva": "Cidade Grande",
+    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg",
+    "disponivel": true
   },
   {
-    "tipo": "duplo",
-    "descricao": "Quarto duplo com duas camas de solteiro.",
-    "valor": "A partir de R$ 400,00/noite",
-    "estado": "Rio de Janeiro",
+    "tipo": "Duplo",
+    "descricao": "Quarto Duplo Com Duas Camas De Solteiro.",
+    "valor": "A Partir De R$ 400,00/Noite",
+    "estado": "Rio De Janeiro",
     "avaliacao": "⭐⭐⭐",
-    "reserva": "cidade grande",
-    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg"
+    "reserva": "Cidade Grande",
+    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg",
+    "disponivel": false
   },
   {
-    "tipo": "casal",
-    "descricao": "Quarto para casal com cama de casal king size.",
-    "valor": "A partir de R$ 450,00/noite",
-    "estado": "Rio de Janeiro",
+    "tipo": "Casal",
+    "descricao": "Quarto Para Casal Com Cama De Casal King Size.",
+    "valor": "A Partir De R$ 450,00/Noite",
+    "estado": "Rio De Janeiro",
     "avaliacao": "⭐⭐⭐⭐",
-    "reserva": "cidade grande",
-    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg"
+    "reserva": "Cidade Grande",
+    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg",
+    "disponivel": true
   },
   {
-    "tipo": "solteiro",
-    "descricao": "Quarto individual com cama de solteiro.",
-    "valor": "A partir de R$ 350,00/noite",
-    "estado": "Rio de Janeiro",
+    "tipo": "Solteiro",
+    "descricao": "Quarto Individual Com Cama De Solteiro.",
+    "valor": "A Partir De R$ 350,00/Noite",
+    "estado": "Rio De Janeiro",
     "avaliacao": "⭐⭐⭐",
-    "reserva": "cidade grande",
-    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg"
+    "reserva": "Cidade Grande",
+    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg",
+    "disponivel": true
   },
   {
-    "tipo": "economico",
-    "descricao": "Opção econômica para viajantes com orçamento limitado.",
-    "valor": "A partir de R$ 250,00/noite",
-    "estado": "Rio de Janeiro",
+    "tipo": "Econômico",
+    "descricao": "Opção Econômica Para Viajantes Com Orçamento Limitado.",
+    "valor": "A Partir De R$ 250,00/Noite",
+    "estado": "Rio De Janeiro",
     "avaliacao": "⭐⭐",
-    "reserva": "cidade grande",
-    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg"
+    "reserva": "Cidade Grande",
+    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg",
+    "disponivel": true
   },
   {
-    "tipo": "luxo",
-    "descricao": "Suítes luxuosas com serviços exclusivos.",
-    "valor": "Preço sob consulta",
+    "tipo": "Luxo",
+    "descricao": "Suítes Luxuosas Com Serviços Exclusivos.",
+    "valor": "Preço Sob Consulta",
     "estado": "Santa Catarina",
     "avaliacao": "⭐⭐⭐⭐⭐",
-    "reserva": "chácara",
-    "imagem": "src/assets/imagens/hoteis/chacara.jpg"
+    "reserva": "Chácara",
+    "imagem": "src/assets/imagens/hoteis/chacara.jpg",
+    "disponivel": true
   },
   {
-    "tipo": "suite",
-    "descricao": "Suítes espaçosas com conforto e elegância.",
-    "valor": "A partir de R$ 550,00/noite",
+    "tipo": "Suite",
+    "descricao": "Suítes Espaçosas Com Conforto E Elegância.",
+    "valor": "A Partir De R$ 550,00/Noite",
     "estado": "Santa Catarina",
     "avaliacao": "⭐⭐⭐⭐",
-    "reserva": "chácara",
-    "imagem": "src/assets/imagens/hoteis/chacara.jpg"
+    "reserva": "Chácara",
+    "imagem": "src/assets/imagens/hoteis/chacara.jpg",
+    "disponivel": false
   },
   {
-    "tipo": "duplo",
-    "descricao": "Quarto duplo com duas camas de solteiro.",
-    "valor": "A partir de R$ 320,00/noite",
+    "tipo": "Duplo",
+    "descricao": "Quarto Duplo Com Duas Camas De Solteiro.",
+    "valor": "A Partir De R$ 320,00/Noite",
     "estado": "Santa Catarina",
     "avaliacao": "⭐⭐⭐",
-    "reserva": "chácara",
-    "imagem": "src/assets/imagens/hoteis/chacara.jpg"
+    "reserva": "Chácara",
+    "imagem": "src/assets/imagens/hoteis/chacara.jpg",
+    "disponivel": true
   },
   {
-    "tipo": "casal",
-    "descricao": "Quarto para casal com cama de casal king size.",
-    "valor": "A partir de R$ 380,00/noite",
+    "tipo": "Casal",
+    "descricao": "Quarto Para Casal Com Cama De Casal King Size.",
+    "valor": "A Partir De R$ 380,00/Noite",
     "estado": "Santa Catarina",
     "avaliacao": "⭐⭐⭐⭐",
-    "reserva": "chácara",
-    "imagem": "src/assets/imagens/hoteis/chacara.jpg"
+    "reserva": "Chácara",
+    "imagem": "src/assets/imagens/hoteis/chacara.jpg",
+    "disponivel": true
   },
   {
-    "tipo": "solteiro",
-    "descricao": "Quarto individual com cama de solteiro.",
-    "valor": "A partir de R$ 280,00/noite",
+    "tipo": "Solteiro",
+    "descricao": "Quarto Individual Com Cama De Solteiro.",
+    "valor": "A Partir De R$ 280,00/Noite",
     "estado": "Santa Catarina",
     "avaliacao": "⭐⭐⭐",
-    "reserva": "chácara",
-    "imagem": "src/assets/imagens/hoteis/chacara.jpg"
+    "reserva": "Chácara",
+    "imagem": "src/assets/imagens/hoteis/chacara.jpg",
+    "disponivel": true
   },
   {
-    "tipo": "economico",
-    "descricao": "Opção econômica para viajantes com orçamento limitado.",
-    "valor": "A partir de R$ 180,00/noite",
+    "tipo": "Econômico",
+    "descricao": "Opção Econômica Para Viajantes Com Orçamento Limitado.",
+    "valor": "A Partir De R$ 180,00/Noite",
     "estado": "Santa Catarina",
     "avaliacao": "⭐⭐",
-    "reserva": "chácara",
-    "imagem": "../src/assets/imagens/hoteis/chacara.jpg"
+    "reserva": "Chácara",
+    "imagem": "src/assets/imagens/hoteis/chacara.jpg",
+    "disponivel": false
   }
 ]

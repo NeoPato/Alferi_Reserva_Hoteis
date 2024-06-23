@@ -14,6 +14,9 @@ export default function Menu() {
       <p>
         <a href="/suporte">Suporte</a>
       </p>
+      <p>
+        <a href="/teste"></a>
+      </p>
     </nav>
   );
 }

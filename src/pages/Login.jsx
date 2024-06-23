@@ -6,16 +6,31 @@ import twitterIcon from '../assets/imagens/icones/twitter.svg';
 import emailIcon from '../assets/imagens/icones/email.svg'; 
 import senhaIcon from '../assets/imagens/icones/senha.svg';  
 import eyeIcon from '../assets/imagens/icones/olho.svg';
-import setLogin from '../components/login';
+import { api } from '../lib/server'
+import { Box } from 'react-bootstrap-icons';
 
 function Login() {
     const [email, setEmail] = useState('');
-    const [senha, setSenha] = useState('');
+    const [password, setPassword] = useState('');
     const [viewer, setViewer] = useState(false); 
 
     const alternarVisibilidadeSenha = () => {
         setViewer(!viewer); 
     };
+
+    const handleClick = () => {
+        api.post("/login", {
+            email,
+            password
+        }).then(response => {
+            localStorage.setItem("user", response.data.accessToken);
+            navigate("/");
+        }).catch(error => {
+            console.log(error);
+            alert("Can't sign in to your account"); 
+        });
+    };
+
 
     return (
         <div>
@@ -49,12 +64,12 @@ function Login() {
                             </div>
                             <div className={style.inputGroup}>
                                 <img src={senhaIcon} alt="Senha Icon" />
-                                <input type={viewer ? 'text' : 'password'} value={senha} onChange={(e) => setSenha(e.target.value)} placeholder="Digite sua senha"/>
+                                <input type={viewer ? 'text' : 'password'} value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Digite sua senha"/>
                                 <button className={style.eyeButton} onClick={alternarVisibilidadeSenha}>
                                     <img src={eyeIcon} alt="Mostrar a senha/ ou não" />
                                 </button>
                             </div>
-                            <button className={style.loginButton} onClick={() => setLogin(email, senha)}>Login</button>
+                            <button className={style.loginButton} onClick={handleClick}>Login</button>
                         </div>
                     </div>
                 </div>

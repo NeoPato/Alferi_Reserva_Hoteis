@@ -5,6 +5,8 @@ import { getUsersBadge } from "./routes/get-users-badge.js";
 import fastifySwaggerUi from "@fastify/swagger-ui";
 import fastifySwagger from "@fastify/swagger";
 import fastifyCors from "@fastify/cors"
+import { errorHandler } from "./error-handler.js";
+import { login } from "./routes/login.js";
 
 const app = fastify();
 
@@ -29,11 +31,18 @@ app.register(fastifySwaggerUi, {
   routePrefix: '/docs',
 });
 
+app.get("/", () => {
+  return "Hotel api";
+});
+
 app.setValidatorCompiler(validatorCompiler);
 app.setSerializerCompiler(serializerCompiler);
 
 app.register(registerUsers);
 app.register(getUsersBadge);
+app.register(login)
+
+app.setErrorHandler(errorHandler);
 
 app.listen({ port: 3333 }).then(() => {
   console.log('HTTP server running on port 3333!');
