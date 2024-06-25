@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import style from '../styles/components/Card.module.css';
 
 const Card = (props) => {
+  const [disponivel, setDisponivel] = useState(props.disponivel);
+
+  const handleReservaClick = () => {
+    if (props.disponivel) {
+      setDisponivel(false);
+      props.onReservaClick(props.id); 
+    }
+  };
+
   return (
     <div className={style.cardContainer}>
       <img src={props.imagem} alt={props.reserva} className={style.cardImage} />
@@ -11,9 +20,14 @@ const Card = (props) => {
       <div className={style.cardText}>Estado: {props.estado}</div>
       <div className={style.cardText}>Avaliação: {props.avaliacao}</div>
       <div className={style.cardText}>Reserva: {props.reserva}</div>
-      <div className={style.cardText} style={{ color: props.disponivel ? 'green' : 'red' }}>
-      Disponível: {props.disponivel ? 'Sim' : 'Não' } </div>
-      <button className={style.cardButton}>Reservar</button>
+      <div className={style.cardText} style={{ color: disponivel ? 'green' : 'red' }}>
+        Disponível: {disponivel ? 'Sim' : 'Não'}
+      </div>
+      {disponivel && (
+        <button className={style.cardButton} onClick={handleReservaClick}>
+          Reservar
+        </button>
+      )}
     </div>
   );
 };

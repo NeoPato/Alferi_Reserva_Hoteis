@@ -7,18 +7,9 @@ function App() {
     <>
         <div className={style.TelaPrincipal}>
             <Menu/>
-            
             <div className={style.TextoBoasVindas}>
               <h4>Aproveite suas férias com os Hotéis Alferi</h4>
               <h1>Deixe-nos planejar suas férias perfeitas</h1>
-            </div>
-
-            <div className={style.Inputs}>  
-              <input type="text" id='pesquisar_local' placeholder='Local aonde você deseja ir'/>
-              <input type="date" id='pesquisar_dataEntrada' placeholder='Data chegada'/>
-              <input type="date" id='pesquisar_dataSaida' placeholder='Data Saída'/>
-              <input type="number" id='pesquisar_QuantidadeP' placeholder='Quantidade de Pessoas'/>
-              <button id='bt_pesquisa'><img src="src/assets/imagens/icones/lupa.svg" alt="Pesquisa" /></button>
             </div>
             
             <div className={style.Maps}></div>

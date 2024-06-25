@@ -3,8 +3,10 @@ import ReactDOM from 'react-dom/client'
 import App from './pages/App';
 import Viagens from './pages/Viagens'
 import Login from './pages/Login'
+import Perfil from './pages/Perfil'
 import Cadastrar from './pages/Cadastrar'
-import Pagemento from './pages/Pagamento';
+import Suporte from './pages/Suporte';
+
 import './styles/index.css'
 import {
   createBrowserRouter,
@@ -31,9 +33,14 @@ const router = createBrowserRouter([
     element: < Cadastrar/>,
   },
   {
-    path: "/pagamento",
-    element: < Pagemento/>,
+    path: "/perfil",
+    element: < Perfil/>,
   },
+  {
+    path: "/suporte",
+    element: < Suporte/>,
+  }
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

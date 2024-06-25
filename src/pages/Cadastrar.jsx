@@ -67,7 +67,6 @@ function Cadastrar() {
                 password,
             });
             
-            // Limpar campos após o envio bem-sucedido
             navigate('/login');
 
         } catch (error) {

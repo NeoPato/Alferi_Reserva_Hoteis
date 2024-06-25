@@ -20,6 +20,7 @@
     "express": "^4.19.2",
     "fastify": "^4.28.0",
     "fastify-type-provider-zod": "^1.2.0",
+    "fs": "^0.0.1-security",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.3",
     "react-bootstrap-icons": "^1.11.4",

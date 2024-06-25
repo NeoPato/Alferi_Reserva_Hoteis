@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "tipo": "Luxo",
     "descricao": "Suítes Luxuosas Com Serviços Exclusivos.",
     "valor": "Preço Sob Consulta",
@@ -10,6 +11,7 @@
     "disponivel": true
   },
   {
+    "id": 2,
     "tipo": "Suite",
     "descricao": "Suítes Espaçosas Com Conforto E Elegância.",
     "valor": "A Partir De R$ 500,00/Noite",
@@ -20,6 +22,7 @@
     "disponivel": false
   },
   {
+    "id": 3,
     "tipo": "Duplo",
     "descricao": "Quarto Duplo Com Duas Camas De Solteiro.",
     "valor": "A Partir De R$ 300,00/Noite",
@@ -30,6 +33,7 @@
     "disponivel": true
   },
   {
+    "id": 4,
     "tipo": "Casal",
     "descricao": "Quarto Para Casal Com Cama De Casal King Size.",
     "valor": "A Partir De R$ 350,00/Noite",
@@ -40,6 +44,7 @@
     "disponivel": true
   },
   {
+    "id": 5,
     "tipo": "Solteiro",
     "descricao": "Quarto Individual Com Cama De Solteiro.",
     "valor": "A Partir De R$ 250,00/Noite",
@@ -50,6 +55,7 @@
     "disponivel": false
   },
   {
+    "id": 6,
     "tipo": "Econômico",
     "descricao": "Opção Econômica Para Viajantes Com Orçamento Limitado.",
     "valor": "A Partir De R$ 150,00/Noite",
@@ -60,6 +66,7 @@
     "disponivel": true
   },
   {
+    "id": 7,
     "tipo": "Luxo",
     "descricao": "Suítes Luxuosas Com Serviços Exclusivos.",
     "valor": "Preço Sob Consulta",
@@ -70,6 +77,7 @@
     "disponivel": false
   },
   {
+    "id": 8,
     "tipo": "Suite",
     "descricao": "Suítes Espaçosas Com Conforto E Elegância.",
     "valor": "A Partir De R$ 600,00/Noite",
@@ -80,6 +88,7 @@
     "disponivel": true
   },
   {
+    "id": 9,
     "tipo": "Duplo",
     "descricao": "Quarto Duplo Com Duas Camas De Solteiro.",
     "valor": "A Partir De R$ 350,00/Noite",
@@ -90,6 +99,7 @@
     "disponivel": true
   },
   {
+    "id": 10,
     "tipo": "Casal",
     "descricao": "Quarto Para Casal Com Cama De Casal King Size.",
     "valor": "A Partir De R$ 400,00/Noite",
@@ -100,6 +110,7 @@
     "disponivel": false
   },
   {
+    "id": 11,
     "tipo": "Solteiro",
     "descricao": "Quarto Individual Com Cama De Solteiro.",
     "valor": "A Partir De R$ 300,00/Noite",
@@ -110,6 +121,7 @@
     "disponivel": true
   },
   {
+    "id": 12,
     "tipo": "Econômico",
     "descricao": "Opção Econômica Para Viajantes Com Orçamento Limitado.",
     "valor": "A Partir De R$ 200,00/Noite",
@@ -120,6 +132,7 @@
     "disponivel": true
   },
   {
+    "id": 13,
     "tipo": "Luxo",
     "descricao": "Suítes Luxuosas Com Serviços Exclusivos.",
     "valor": "Preço Sob Consulta",
@@ -130,6 +143,7 @@
     "disponivel": true
   },
   {
+    "id": 14,
     "tipo": "Suite",
     "descricao": "Suítes Espaçosas Com Conforto E Elegância.",
     "valor": "A Partir De R$ 700,00/Noite",
@@ -140,6 +154,7 @@
     "disponivel": true
   },
   {
+    "id": 15,
     "tipo": "Duplo",
     "descricao": "Quarto Duplo Com Duas Camas De Solteiro.",
     "valor": "A Partir De R$ 400,00/Noite",
@@ -150,6 +165,7 @@
     "disponivel": false
   },
   {
+    "id": 16,
     "tipo": "Casal",
     "descricao": "Quarto Para Casal Com Cama De Casal King Size.",
     "valor": "A Partir De R$ 450,00/Noite",
@@ -160,6 +176,7 @@
     "disponivel": true
   },
   {
+    "id": 17,
     "tipo": "Solteiro",
     "descricao": "Quarto Individual Com Cama De Solteiro.",
     "valor": "A Partir De R$ 350,00/Noite",
@@ -170,6 +187,7 @@
     "disponivel": true
   },
   {
+    "id": 18,
     "tipo": "Econômico",
     "descricao": "Opção Econômica Para Viajantes Com Orçamento Limitado.",
     "valor": "A Partir De R$ 250,00/Noite",
@@ -180,6 +198,7 @@
     "disponivel": true
   },
   {
+    "id": 19,
     "tipo": "Luxo",
     "descricao": "Suítes Luxuosas Com Serviços Exclusivos.",
     "valor": "Preço Sob Consulta",
@@ -190,6 +209,7 @@
     "disponivel": true
   },
   {
+    "id": 20,
     "tipo": "Suite",
     "descricao": "Suítes Espaçosas Com Conforto E Elegância.",
     "valor": "A Partir De R$ 550,00/Noite",
@@ -200,6 +220,7 @@
     "disponivel": false
   },
   {
+    "id": 21,
     "tipo": "Duplo",
     "descricao": "Quarto Duplo Com Duas Camas De Solteiro.",
     "valor": "A Partir De R$ 320,00/Noite",
@@ -210,6 +231,7 @@
     "disponivel": true
   },
   {
+    "id": 22,
     "tipo": "Casal",
     "descricao": "Quarto Para Casal Com Cama De Casal King Size.",
     "valor": "A Partir De R$ 380,00/Noite",
@@ -220,6 +242,7 @@
     "disponivel": true
   },
   {
+    "id": 23,
     "tipo": "Solteiro",
     "descricao": "Quarto Individual Com Cama De Solteiro.",
     "valor": "A Partir De R$ 280,00/Noite",
@@ -230,6 +253,7 @@
     "disponivel": true
   },
   {
+    "id": 24,
     "tipo": "Econômico",
     "descricao": "Opção Econômica Para Viajantes Com Orçamento Limitado.",
     "valor": "A Partir De R$ 180,00/Noite",
