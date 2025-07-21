@@ -13,7 +13,7 @@ export default function Menu() {
 
   return (
     <nav className={styles.BarraMenu}>
-      <img src="src/assets/imagens/logo_alferi_hotel_icone.svg" alt="logo" />
+      <img src="/logo_alferi_hotel.svg" alt="logo" />
       <a href="/"><h4>Hotéis Alferi</h4></a>
       <p>
         {isLoggedIn ? (
