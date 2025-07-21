@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import style from '../styles/pages/Login.module.css';
-import googleIcon from '../assets/imagens/icones/google.svg';
-import instagramIcon from '../assets/imagens/icones/instagram.svg';
-import twitterIcon from '../assets/imagens/icones/twitter.svg';
-import emailIcon from '../assets/imagens/icones/email.svg';
-import senhaIcon from '../assets/imagens/icones/senha.svg';
-import eyeIcon from '../assets/imagens/icones/olho.svg';
+import googleIcon from '/icones/google.svg';
+import instagramIcon from '/icones/instagram.svg';
+import twitterIcon from '/icones/twitter.svg';
+import emailIcon from '/icones/email.svg';
+import senhaIcon from '/icones/senha.svg';
+import eyeIcon from '/icones/olho.svg';
 import { api } from '../lib/server';
 
 function Login() {

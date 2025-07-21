@@ -1,10 +1,10 @@
-import imgParana from '../assets/imagens/Estados e Cidades/pexels-drethousand-8571265.svg';
-import imgRio from '../assets/imagens/Estados e Cidades/pexels-florencia-potter-82066-351283.svg';
-import imgSantaCatarina from '../assets/imagens/Estados e Cidades/pexels-pixabay-433086.svg';
-import imgBahia from '../assets/imagens/Estados e Cidades/pexels-leonardodourado-14059766.svg';
-import imgChacara from '../assets/imagens/Estados e Cidades/rustic-patio-furniture-house-deck-with-vegetation.svg';
-import imgCidadeGrande from '../assets/imagens/Estados e Cidades/road-tall-buildings.svg';
-import imgPraia from '../assets/imagens/Estados e Cidades/vertical-shot-palm-trees-beach-cloudy-sunny-day.svg';
+import imgParana from '/Estados e Cidades/pexels-drethousand-8571265.svg';
+import imgRio from '/Estados e Cidades/pexels-florencia-potter-82066-351283.svg';
+import imgSantaCatarina from '/Estados e Cidades/pexels-pixabay-433086.svg';
+import imgBahia from '/Estados e Cidades/pexels-leonardodourado-14059766.svg';
+import imgChacara from '/Estados e Cidades/rustic-patio-furniture-house-deck-with-vegetation.svg';
+import imgCidadeGrande from '/Estados e Cidades/road-tall-buildings.svg';
+import imgPraia from '/Estados e Cidades/vertical-shot-palm-trees-beach-cloudy-sunny-day.svg';
 import style from '../styles/pages/App.module.css';
 import Menu from '../components/menu.jsx';
 import Footer from '../components/footer.jsx';

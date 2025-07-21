@@ -7,7 +7,7 @@
     "estado": "Paraná",
     "avaliacao": "⭐⭐⭐⭐⭐",
     "reserva": "Cidade Grande",
-    "imagem": "/praia.jpg",
+    "imagem": "/hoteis/cidadeGrande.jpg",
     "disponivel": true
   },
   {
@@ -18,7 +18,7 @@
     "estado": "Paraná",
     "avaliacao": "⭐⭐⭐⭐",
     "reserva": "Cidade Grande",
-    "imagem": "/cidadeGrande.jpg",
+    "imagem": "/hoteis/cidadeGrande.jpg",
     "disponivel": false
   },
   {
@@ -29,7 +29,7 @@
     "estado": "Paraná",
     "avaliacao": "⭐⭐⭐",
     "reserva": "Cidade Grande",
-    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg",
+    "imagem": "/hoteis/cidadeGrande.jpg",
     "disponivel": true
   },
   {
@@ -40,7 +40,7 @@
     "estado": "Paraná",
     "avaliacao": "⭐⭐⭐⭐",
     "reserva": "Cidade Grande",
-    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg",
+    "imagem": "/hoteis/cidadeGrande.jpg",
     "disponivel": true
   },
   {
@@ -51,7 +51,7 @@
     "estado": "Paraná",
     "avaliacao": "⭐⭐⭐",
     "reserva": "Cidade Grande",
-    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg",
+    "imagem": "/hoteis/cidadeGrande.jpg",
     "disponivel": false
   },
   {
@@ -62,7 +62,7 @@
     "estado": "Paraná",
     "avaliacao": "⭐⭐",
     "reserva": "Cidade Grande",
-    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg",
+    "imagem": "/hoteis/cidadeGrande.jpg",
     "disponivel": true
   },
   {
@@ -73,7 +73,7 @@
     "estado": "Bahia",
     "avaliacao": "⭐⭐⭐⭐⭐",
     "reserva": "Praia",
-    "imagem": "src/assets/imagens/hoteis/praia.jpg",
+    "imagem": "/hoteis/praia.jpg",
     "disponivel": false
   },
   {
@@ -84,7 +84,7 @@
     "estado": "Bahia",
     "avaliacao": "⭐⭐⭐⭐",
     "reserva": "Praia",
-    "imagem": "src/assets/imagens/hoteis/praia.jpg",
+    "imagem": "/hoteis/praia.jpg",
     "disponivel": true
   },
   {
@@ -95,7 +95,7 @@
     "estado": "Bahia",
     "avaliacao": "⭐⭐⭐",
     "reserva": "Praia",
-    "imagem": "src/assets/imagens/hoteis/praia.jpg",
+    "imagem": "/hoteis/praia.jpg",
     "disponivel": true
   },
   {
@@ -106,7 +106,7 @@
     "estado": "Bahia",
     "avaliacao": "⭐⭐⭐⭐",
     "reserva": "Praia",
-    "imagem": "src/assets/imagens/hoteis/praia.jpg",
+    "imagem": "/hoteis/praia.jpg",
     "disponivel": false
   },
   {
@@ -117,7 +117,7 @@
     "estado": "Bahia",
     "avaliacao": "⭐⭐⭐",
     "reserva": "Praia",
-    "imagem": "src/assets/imagens/hoteis/praia.jpg",
+    "imagem": "/hoteis/praia.jpg",
     "disponivel": true
   },
   {
@@ -128,7 +128,7 @@
     "estado": "Bahia",
     "avaliacao": "⭐⭐",
     "reserva": "Praia",
-    "imagem": "src/assets/imagens/hoteis/praia.jpg",
+    "imagem": "/hoteis/praia.jpg",
     "disponivel": true
   },
   {
@@ -139,7 +139,7 @@
     "estado": "Rio De Janeiro",
     "avaliacao": "⭐⭐⭐⭐⭐",
     "reserva": "Cidade Grande",
-    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg",
+    "imagem": "/hoteis/cidadeGrande.jpg",
     "disponivel": true
   },
   {
@@ -150,7 +150,7 @@
     "estado": "Rio De Janeiro",
     "avaliacao": "⭐⭐⭐⭐",
     "reserva": "Cidade Grande",
-    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg",
+    "imagem": "/hoteis/cidadeGrande.jpg",
     "disponivel": true
   },
   {
@@ -161,7 +161,7 @@
     "estado": "Rio De Janeiro",
     "avaliacao": "⭐⭐⭐",
     "reserva": "Cidade Grande",
-    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg",
+    "imagem": "/hoteis/cidadeGrande.jpg",
     "disponivel": false
   },
   {
@@ -172,7 +172,7 @@
     "estado": "Rio De Janeiro",
     "avaliacao": "⭐⭐⭐⭐",
     "reserva": "Cidade Grande",
-    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg",
+    "imagem": "/hoteis/cidadeGrande.jpg",
     "disponivel": true
   },
   {
@@ -183,7 +183,7 @@
     "estado": "Rio De Janeiro",
     "avaliacao": "⭐⭐⭐",
     "reserva": "Cidade Grande",
-    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg",
+    "imagem": "/hoteis/cidadeGrande.jpg",
     "disponivel": true
   },
   {
@@ -194,7 +194,7 @@
     "estado": "Rio De Janeiro",
     "avaliacao": "⭐⭐",
     "reserva": "Cidade Grande",
-    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg",
+    "imagem": "/hoteis/cidadeGrande.jpg",
     "disponivel": true
   },
   {
@@ -205,7 +205,7 @@
     "estado": "Santa Catarina",
     "avaliacao": "⭐⭐⭐⭐⭐",
     "reserva": "Chácara",
-    "imagem": "src/assets/imagens/hoteis/chacara.jpg",
+    "imagem": "/hoteis/chacara.jpg",
     "disponivel": true
   },
   {
@@ -216,7 +216,7 @@
     "estado": "Santa Catarina",
     "avaliacao": "⭐⭐⭐⭐",
     "reserva": "Chácara",
-    "imagem": "src/assets/imagens/hoteis/chacara.jpg",
+    "imagem": "/hoteis/chacara.jpg",
     "disponivel": false
   },
   {
@@ -227,7 +227,7 @@
     "estado": "Santa Catarina",
     "avaliacao": "⭐⭐⭐",
     "reserva": "Chácara",
-    "imagem": "src/assets/imagens/hoteis/chacara.jpg",
+    "imagem": "/hoteis/chacara.jpg",
     "disponivel": true
   },
   {
@@ -238,7 +238,7 @@
     "estado": "Santa Catarina",
     "avaliacao": "⭐⭐⭐⭐",
     "reserva": "Chácara",
-    "imagem": "src/assets/imagens/hoteis/chacara.jpg",
+    "imagem": "/hoteis/chacara.jpg",
     "disponivel": true
   },
   {
@@ -249,7 +249,7 @@
     "estado": "Santa Catarina",
     "avaliacao": "⭐⭐⭐",
     "reserva": "Chácara",
-    "imagem": "src/assets/imagens/hoteis/chacara.jpg",
+    "imagem": "/hoteis/chacara.jpg",
     "disponivel": true
   },
   {
@@ -260,7 +260,7 @@
     "estado": "Santa Catarina",
     "avaliacao": "⭐⭐",
     "reserva": "Chácara",
-    "imagem": "src/assets/imagens/hoteis/chacara.jpg",
+    "imagem": "/hoteis/chacara.jpg",
     "disponivel": false
   }
 ]
