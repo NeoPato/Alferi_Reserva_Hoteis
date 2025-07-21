@@ -7,7 +7,7 @@
     "estado": "Paraná",
     "avaliacao": "⭐⭐⭐⭐⭐",
     "reserva": "Cidade Grande",
-    "imagem": "src/assets/imagens/hoteis/praia.jpg",
+    "imagem": "/praia.jpg",
     "disponivel": true
   },
   {
@@ -18,7 +18,7 @@
     "estado": "Paraná",
     "avaliacao": "⭐⭐⭐⭐",
     "reserva": "Cidade Grande",
-    "imagem": "src/assets/imagens/hoteis/cidadeGrande.jpg",
+    "imagem": "/cidadeGrande.jpg",
     "disponivel": false
   },
   {
