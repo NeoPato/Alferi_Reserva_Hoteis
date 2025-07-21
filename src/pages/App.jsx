@@ -1,4 +1,10 @@
 import imgParana from '../assets/imagens/Estados e Cidades/pexels-drethousand-8571265.svg';
+import imgRio from '../assets/imagens/Estados e Cidades/pexels-florencia-potter-82066-351283.svg';
+import imgSantaCatarina from '../assets/imagens/Estados e Cidades/pexels-pixabay-433086.svg';
+import imgBahia from '../assets/imagens/Estados e Cidades/pexels-leonardodourado-14059766.svg';
+import imgChacara from '../assets/imagens/Estados e Cidades/rustic-patio-furniture-house-deck-with-vegetation.svg';
+import imgCidadeGrande from '../assets/imagens/Estados e Cidades/road-tall-buildings.svg';
+import imgPraia from '../assets/imagens/Estados e Cidades/vertical-shot-palm-trees-beach-cloudy-sunny-day.svg';
 import style from '../styles/pages/App.module.css';
 import Menu from '../components/menu.jsx';
 import Footer from '../components/footer.jsx';
@@ -20,24 +26,23 @@ function App() {
             <div className={style.imagensViagens}>
               <div className={style.Chacara}>
                 <a href="/Viagens">  
-                  <img src="/rustic-patio-furniture-house-deck-with-vegetation.svg" alt="Chácara" />
+                  <img src={imgChacara} alt="Chácara" />
                 </a>                
-                  <h5>Chácara</h5>
+                <h5>Chácara</h5>
               </div>
               <div className={style.CidadeGrande}>
                 <a href="/Viagens">  
-                  <img src="/road-tall-buildings.svg" alt="Cidade Grande" />
+                  <img src={imgCidadeGrande} alt="Cidade Grande" />
                 </a>
-                  <h5>Cidade Grande</h5>
+                <h5>Cidade Grande</h5>
               </div>
               <div className={style.Praia}>
                 <a href="/Viagens">  
-                  <img src="/vertical-shot-palm-trees-beach-cloudy-sunny-day.svg" alt="Praia" /> 
+                  <img src={imgPraia} alt="Praia" /> 
                 </a>
-                  <h5>Praia</h5>
+                <h5>Praia</h5>
               </div>
             </div>
-
 
             <h4>Estados Disponíveis Para Reserva</h4>
 
@@ -47,15 +52,15 @@ function App() {
                 <h5>Paraná</h5>
               </div>
               <div className={style.RioDeJaneiro}>
-                <img src="/pexels-florencia-potter-82066-351283.svg" alt="Rio De Janeiro" />
+                <img src={imgRio} alt="Rio De Janeiro" />
                 <h5>Rio De Janeiro</h5>
               </div>
               <div className={style.SantaCatarina}>
-                <img src="/pexels-pixabay-433086.svg" alt="Santa Catarina" />
+                <img src={imgSantaCatarina} alt="Santa Catarina" />
                 <h5>Santa Catarina</h5>
               </div>
               <div className={style.Bahia}>
-                <img src="/pexels-leonardodourado-14059766.svg" alt="Bahia" />
+                <img src={imgBahia} alt="Bahia" />
                 <h5>Bahia</h5>
               </div>
             </div>
