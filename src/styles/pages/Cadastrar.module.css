@@ -19,14 +19,24 @@
 
 .leftPanel, .rightPanel {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 200px;
+    padding: 0 200px;
     box-sizing: border-box;
 }
-
+.rightPanel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    max-height: 90vh;
+    width: 100%;
+    padding: 0 200px;
+    box-sizing: border-box;
+}
 .leftPanel {
     background-color: #C0C0C0;
     border-top-right-radius: 40px;
@@ -71,8 +81,11 @@
 
 .cadastrarBox {
     background-color: #F5F5F5;
+    margin-top: 80px;
+    height: 80vh;
+    width: 80%;
+    max-height: 100vh;
     padding: 40px;
-    border-radius: 15px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
@@ -95,6 +108,7 @@
     border: 1px solid #000;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 5vh;
 }
 
 .inputGroup img {
@@ -109,7 +123,7 @@
     outline: none;
     background: none;
     font-size: 1em;
-}
+}   
 
 .eyeButton {
     background-color: transparent; 

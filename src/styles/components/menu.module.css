@@ -5,6 +5,7 @@
   background-color: #deddc8;
   box-sizing: border-box; 
   width: 100%; 
+  margin: 0;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
@@ -15,7 +16,7 @@
 }
 
 .BarraMenu h4 {
-  float: left; /* Keep h4 floated to the left */
+  float: left; 
   color: #000;
   padding-right:15cm;
 }
@@ -23,6 +24,7 @@
 .BarraMenu img{
   background-color: #bdbca8;
   border-radius: 20px;
+  margin-top: 10px;
   height: 50px;
   width: auto;
   border: 2px solid black;

@@ -19,11 +19,12 @@
 
 .leftPanel, .rightPanel {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
-    padding: 200px;
+    width: auto;
+    height: auto;
+    padding: 0 200px;
     box-sizing: border-box;
 }
 

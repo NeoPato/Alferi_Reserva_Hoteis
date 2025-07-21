@@ -34,17 +34,17 @@ function Suporte() {
                 <h2>WhatsApp</h2>
                 <div className={style.inputsDiv}>
                     <div>
-                        <label htmlFor="name">Nome</label>
+                        <label style={{ background: "white" }} htmlFor="name">Nome: </label>
                         <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
                     </div>
                     <br />
                     <div>
-                        <label htmlFor="email">Email</label>
+                        <label style={{ background: "white" }} htmlFor="email">Email: </label>
                         <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
                     </div>
                     <br />
                     <div>
-                        <label htmlFor="message">Mensagem</label>
+                        <label style={{ background: "white" }} htmlFor="message">Mensagem: </label>
                         <textarea className={style.message} id="message" name="message" value={formData.message} onChange={handleChange} required></textarea>
                     </div>
                     <button className={style.btnCont} onClick={handleWhatsAppMessage}>Enviar mensagem</button>
